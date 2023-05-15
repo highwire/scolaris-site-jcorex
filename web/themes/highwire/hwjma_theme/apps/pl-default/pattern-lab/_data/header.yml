@@ -9,9 +9,9 @@ site_logo:
     height: 86
 publisher_logo:
   image:
-    src: "../../../assets/images/asce-explore.svg"
-    title: ASCE Explore Logo
-    alt: ASCE Explore Logo
+    src: "../../../assets/images/hwjma-explore.svg"
+    title: HWJMA Explore Logo
+    alt: HWJMA Explore Logo
     class: brand__logo
     width: 286
     height: 86

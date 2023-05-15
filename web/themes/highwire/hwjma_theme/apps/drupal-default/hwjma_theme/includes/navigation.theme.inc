@@ -10,7 +10,7 @@ use Drupal\search\SearchPageInterface;
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function asce_preprocess_breadcrumb(&$variables) {
+function hwjma_preprocess_breadcrumb(&$variables) {
   // Taken from Umami theme
   // We are creating a variable for the Current Page Title, to allow us to print
   // it after the breadcrumbs loop has run.

@@ -5,13 +5,13 @@
  * Functions to support theming miscellaneous things the Particle theme.
  */
 
-use Drupal\asce\Particle;
+use Drupal\hwjma\Particle;
 use Drupal\Core\Link;
 
 /**
  * Implements hook_preprocess().
  */
-function asce_preprocess(&$variables) {
+function hwjma_preprocess(&$variables) {
   // Set the paths.assets variable globally, so that drupal can
   // find webpack-compiled assets.
   $variables['paths']['assets'] = Particle::ASSETS_PATH;
@@ -23,7 +23,7 @@ function asce_preprocess(&$variables) {
 /**
  * Implements hook_page_attachments_alter().
  */
-function asce_page_attachments_alter(array &$page) {
+function hwjma_page_attachments_alter(array &$page) {
   // Tell IE to use latest rendering engine (not to use compatibility mode).
   $ie_edge = [
     '#type' => 'html_tag',
@@ -39,7 +39,7 @@ function asce_page_attachments_alter(array &$page) {
 /**
  * Implements hook_preprocess_region();
  */
-function asce_preprocess_region(&$variables) {
+function hwjma_preprocess_region(&$variables) {
   if (empty($variables['region'])) {
     return;
   }
@@ -49,11 +49,11 @@ function asce_preprocess_region(&$variables) {
       if ($variables['region'] == 'header_auth') {
 
         // Build account menu.
-        $menu = asce_get_menu_render_array('account');
+        $menu = hwjma_get_menu_render_array('account');
         $sigma_login_link = [];
         if (!$variables['logged_in']) {
-          if (!empty($menu['#items']['asce_core.idp.login'])) {
-            $sigma_login_link = &$menu['#items']['asce_core.idp.login'];
+          if (!empty($menu['#items']['hwjma_core.idp.login'])) {
+            $sigma_login_link = &$menu['#items']['hwjma_core.idp.login'];
           }
         }
         // Add login link / account menu.

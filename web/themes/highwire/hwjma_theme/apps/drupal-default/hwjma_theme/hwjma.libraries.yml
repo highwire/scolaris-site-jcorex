@@ -27,9 +27,9 @@ focus_view:
     theme:
       dest/focus_view.css: {}
 
-asce-toc:
+hwjma-toc:
   js:
-    js/lib/asce-toc.js: { minified: true }
+    js/lib/hwjma-toc.js: { minified: true }
   dependencies:
     - core/jquery
     - core/jquery.once

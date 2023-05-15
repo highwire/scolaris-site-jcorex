@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\asce_content_display\Element;
+namespace Drupal\hwjma_content_display\Element;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element\RenderElement;
@@ -11,13 +11,13 @@ use Drupal\Core\Render\Element\RenderElement;
  * Usage example:
  * @code
  * $build['icon'] = [
- *   '#type' => 'asce_icon',
+ *   '#type' => 'hwjma_icon',
  *   '#icon' => 'twitter',
  *   '#icon_library' => 'fab',
  * ];
  * @endcode
  *
- * @RenderElement("asce_icon")
+ * @RenderElement("hwjma_icon")
  */
 class Icon extends RenderElement {
 
@@ -33,7 +33,7 @@ class Icon extends RenderElement {
       '#pre_render' => [
         [$class, 'preRenderIcon'],
       ],
-      '#theme' => 'asce_icon',
+      '#theme' => 'hwjma_icon',
       '#icon' => '',
       '#icon_prefix' => 'fa',
       '#icon_library' => 'fas',

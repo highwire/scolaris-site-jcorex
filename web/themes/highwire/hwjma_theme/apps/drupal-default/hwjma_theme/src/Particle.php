@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\asce;
+namespace Drupal\hwjma;
 
 /**
  * Provides a primary particle class.
@@ -10,14 +10,14 @@ class Particle {
   /**
    * Provides theme name constant.
    */
-  const THEME_NAME = 'asce';
+  const THEME_NAME = 'hwjma';
 
   /**
    * Provides the path for compiled Drupal assets in build system.
    */
-  const ASSETS_PATH = 'themes/asce/dist/app-drupal/assets';
-  const IMAGES_PATH = 'themes/asce/dist/app-drupal/assets/images';
-  const FONTS_PATH = 'themes/asce/dist/app-drupal/assets/fonts';
+  const ASSETS_PATH = 'themes/hwjma/dist/app-drupal/assets';
+  const IMAGES_PATH = 'themes/hwjma/dist/app-drupal/assets/images';
+  const FONTS_PATH = 'themes/hwjma/dist/app-drupal/assets/fonts';
   //const SVGS_PATH = 'themes/particle/dist/app-drupal/assets/atomic/_patterns/01-atoms/svg/icons';
 
   /**

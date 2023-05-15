@@ -8,13 +8,13 @@
 /**
  * Implements hook_theme()
  */
-function asce_theme(array $existing, $type, $theme, $path) {
+function hwjma_theme(array $existing, $type, $theme, $path) {
   return [
     'list_items_per_page' => [
       'variables' => ['options' => [], 'url_parameter' => 'items_per_page', 'url' => FALSE, 'total' => 0],
     ],
-    'asce_page_layout' => [
-      'template' => 'layout/asce-page-layout',
+    'hwjma_page_layout' => [
+      'template' => 'layout/hwjma-page-layout',
       'render element' => 'content',
     ],
     'facet_block' => [

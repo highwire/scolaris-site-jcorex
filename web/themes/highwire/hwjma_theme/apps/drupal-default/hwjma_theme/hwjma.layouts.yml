@@ -149,10 +149,10 @@ particle_four_column_1_1:
       label: Particle Fourth
       region_classes:
         ['layout__region', 'layout__region--fourth', 'w-full', 'md:w-1/3']
-asce_layout__lhs:
-  label: ASCE 2 Column with LHS
-  category: ASCE Layouts
-  theme_hook: asce_page_layout
+hwjma_layout__lhs:
+  label: HWJMA 2 Column with LHS
+  category: HWJMA Layouts
+  theme_hook: hwjma_page_layout
   default_region: main
   row_classes:
     main:
@@ -174,10 +174,10 @@ asce_layout__lhs:
       label: Content bottom
       row: bottom
       class: col-xs-12
-asce_layout__front:
-  label: ASCE Front page
-  category: ASCE Layouts
-  theme_hook: asce_page_layout
+hwjma_layout__front:
+  label: HWJMA Front page
+  category: HWJMA Layouts
+  theme_hook: hwjma_page_layout
   default_region: main
   regions:
     main:
@@ -188,10 +188,10 @@ asce_layout__front:
       label: Tools Grid
       row: bottom
       class: col-xs-12 homepage__tools
-asce_layout:
-  label: ASCE Single Column
-  category: ASCE Layouts
-  theme_hook: asce_page_layout
+hwjma_layout:
+  label: HWJMA Single Column
+  category: HWJMA Layouts
+  theme_hook: hwjma_page_layout
   default_region: main
   regions:
     content_top:

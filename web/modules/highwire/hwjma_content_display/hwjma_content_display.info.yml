@@ -1,8 +1,8 @@
-name: ASCE Content Display
+name: HWJMA Content Display
 type: module
-description: Front-end customizations for ASCE content.
+description: Front-end customizations for HWJMA content.
 core: 8.x
 package: 'Scolaris  '
 
 libraries:
-  - asce_content_display/quickactions
+  - hwjma_content_display/quickactions

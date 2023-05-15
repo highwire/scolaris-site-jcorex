@@ -28,7 +28,7 @@ include 'includes/user.theme.inc';
 include 'includes/views.theme.inc';
 
 
-function asce_preprocess_image(&$variables) {
+function hwjma_preprocess_image(&$variables) {
   $variables['attributes']['class'] = 'brand__logo';
 }
 

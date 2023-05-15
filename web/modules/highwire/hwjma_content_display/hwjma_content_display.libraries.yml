@@ -1,4 +1,4 @@
-drupal.asce_content_display.views-carousel:
+drupal.hwjma_content_display.views-carousel:
   version: VERSION
   js:
     js/views-carousel.js: {}
@@ -6,7 +6,7 @@ drupal.asce_content_display.views-carousel:
     - core/jquery
     - core/drupal
     - core/jquery.once
-    - asce_content_display/swiper.swiperjs
+    - hwjma_content_display/swiper.swiperjs
 
 swiper.swiperjs:
   remote: https://github.com/nolimits4web/Swiper
