@@ -1,0 +1,21 @@
+uuid: 02ffe4a8-fc30-4946-90bb-a0defa83d737
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.lpage
+field_name: lpage
+entity_type: node
+bundle: item_commentary_section
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

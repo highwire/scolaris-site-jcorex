@@ -1,0 +1,42 @@
+uuid: 3f0bd542-a1c9-40b4-9d56-48e468467dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.homepage_product_info
+  module:
+    - panels
+    - views
+id: home-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    3a507472-80df-4d57-a0f9-b8da2552557f:
+      id: 'views_block:homepage_product_info-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: main
+      weight: 0
+      uuid: 3a507472-80df-4d57-a0f9-b8da2552557f
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 2380b9e7-4773-4f51-9a78-1d039643222e
+  label: null
+  weight: 0
+  layout: tms_layout__front
+  layout_settings:
+    label: Homepage
+  page_title: homepage
+  storage_type: page_manager
+  storage_id: home-panels_variant-0
+  builder: standard
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,21 @@
+uuid: 98ea08d7-d4d1-4740-8bc2-f026d9ee413f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_id
+    - node.type.item_table
+  module:
+    - text
+id: node.item_table.standard_id
+field_name: standard_id
+entity_type: node
+bundle: item_table
+label: standard-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

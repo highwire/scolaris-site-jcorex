@@ -1,0 +1,37 @@
+uuid: 4df8a365-e7a0-47b7-899d-8c21ccf30f54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publisher
+    - node.type.item_standard
+  module:
+    - double_field
+id: node.item_standard.publisher
+field_name: publisher
+entity_type: node
+bundle: item_standard
+label: publisher
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

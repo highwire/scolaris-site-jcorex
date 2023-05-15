@@ -1,0 +1,21 @@
+uuid: 5f209994-f0de-49cd-a888-a307a58c76b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_back_matter_standard_url
+    - node.type.item_standard
+id: node.item_standard.first_back_matter_standard_url
+field_name: first_back_matter_standard_url
+entity_type: node
+bundle: item_standard
+label: first-back-matter-standard-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

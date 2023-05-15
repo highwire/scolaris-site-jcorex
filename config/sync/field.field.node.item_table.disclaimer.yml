@@ -1,0 +1,21 @@
+uuid: d1198397-2c91-4e6e-aa87-7a64e86781d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.disclaimer
+    - node.type.item_table
+  module:
+    - text
+id: node.item_table.disclaimer
+field_name: disclaimer
+entity_type: node
+bundle: item_table
+label: disclaimer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

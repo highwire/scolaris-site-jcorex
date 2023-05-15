@@ -1,0 +1,21 @@
+uuid: 2bb5fa8c-33a9-4beb-866b-539e1e94418e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.description
+    - node.type.item_commentary_chapter
+  module:
+    - text
+id: node.item_commentary_chapter.description
+field_name: description
+entity_type: node
+bundle: item_commentary_chapter
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: a150830b-2afc-4150-82f8-bc74d82c8089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.item_type
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.item_type
+field_name: item_type
+entity_type: node
+bundle: item_commentary_section
+label: item-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

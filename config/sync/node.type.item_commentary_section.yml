@@ -1,0 +1,11 @@
+uuid: a52b0e0a-8828-47b6-b4bf-287c80996d67
+langcode: en
+status: true
+dependencies: {  }
+name: item_commentary_section
+type: item_commentary_section
+description: 'Auto generated HighWire content type for item-commentary-section'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 35b91083-b736-45f5-9ad7-d3e71a7cd3c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_markup
+    - node
+_core:
+  default_config_hash: lGOWSV3cpwPALVDIccJg8yeU3qBYHNuw3LQv0loG0Y0
+id: node.markup
+field_name: markup
+entity_type: node
+type: HWMarkup
+settings:
+  case_sensitive: false
+module: highwire_markup
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

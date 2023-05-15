@@ -1,0 +1,21 @@
+uuid: e8a4905c-6985-40c5-9e25-875fca34c90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_chapter_type
+    - node.type.item_standard_chapter
+  module:
+    - text
+id: node.item_standard_chapter.standard_chapter_type
+field_name: standard_chapter_type
+entity_type: node
+bundle: item_standard_chapter
+label: standard-chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

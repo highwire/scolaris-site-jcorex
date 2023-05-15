@@ -1,0 +1,57 @@
+uuid: fa93dc42-b64e-4869-98c1-6d272e00d5b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.tms
+    - views.view.search
+  module:
+    - search_api
+id: standard
+name: Standard
+url_alias: standard
+weight: 0
+min_count: 0
+show_only_one_result: false
+field_identifier: parent_standard
+facet_source_id: 'search_api:views_page__search__page_1'
+widget:
+  type: tmscheckbox
+  config:
+    show_numbers: true
+    soft_limit: '0'
+    soft_limit_settings:
+      show_less_label: 'Show less'
+      show_more_label: 'Show more'
+    show_reset_link: 1
+    reset_text: 'Include all'
+    reset_id: content_types_reset
+    show_reset_count: 1
+query_operator: or
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  last_result_clear_facet_processor:
+    processor_id: last_result_clear_facet_processor
+    weights:
+      build: 25
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none
+show_title: false

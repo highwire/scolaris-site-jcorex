@@ -1,0 +1,37 @@
+uuid: 54acf819-442f-4cd9-8246-d6a03d27618a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.keywords
+    - node.type.item_commentary_section
+  module:
+    - double_field
+id: node.item_commentary_section.keywords
+field_name: keywords
+entity_type: node
+bundle: item_commentary_section
+label: keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

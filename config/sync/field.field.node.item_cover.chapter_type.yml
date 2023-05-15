@@ -1,0 +1,21 @@
+uuid: ca999b05-41c2-4134-8d6d-8beb06a2ef03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.chapter_type
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.chapter_type
+field_name: chapter_type
+entity_type: node
+bundle: item_cover
+label: chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 8819c31b-0b62-4964-a900-408a8f8b59c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard
+    - node.type.item_standard_chapter
+id: node.item_standard_chapter.standard
+field_name: standard
+entity_type: node
+bundle: item_standard_chapter
+label: standard
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

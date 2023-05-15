@@ -1,0 +1,21 @@
+uuid: 7aa90223-cc05-45ce-8cbf-34ca29fed925
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.atom_id
+    - node.type.item_figure
+  module:
+    - text
+id: node.item_figure.atom_id
+field_name: atom_id
+entity_type: node
+bundle: item_figure
+label: atom-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

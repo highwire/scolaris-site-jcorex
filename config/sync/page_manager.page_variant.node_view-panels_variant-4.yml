@@ -1,0 +1,81 @@
+uuid: 7bc82694-db53-403c-a5e8-ba00721fd3f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - system.menu.products
+  module:
+    - ctools
+    - panels
+    - system
+id: node_view-panels_variant-4
+label: Product
+variant: panels_variant
+variant_settings:
+  blocks:
+    2bd0f024-91b5-4846-956a-d595e0ac6d2b:
+      id: 'system_menu_block:products'
+      label: Products
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 0
+      uuid: 2bd0f024-91b5-4846-956a-d595e0ac6d2b
+      context_mapping: {  }
+    c3bb52aa-91a1-499e-b92a-297bd7d8e884:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: default
+      region: right
+      weight: 0
+      uuid: c3bb52aa-91a1-499e-b92a-297bd7d8e884
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: 1a15c4f9-90e5-4f68-89f7-7f83a95bcead
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+  page_title: Products
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-4
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      product_basic_page: product_basic_page
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+static_context: {  }

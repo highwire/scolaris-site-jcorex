@@ -1,0 +1,21 @@
+uuid: b552b128-fa0c-44b1-9cdf-e7eb3bac1322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_has_abstract
+    - node.type.item_part
+id: node.item_part.standard_has_abstract
+field_name: standard_has_abstract
+entity_type: node
+bundle: item_part
+label: standard-has-abstract
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

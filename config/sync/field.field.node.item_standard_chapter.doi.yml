@@ -1,0 +1,21 @@
+uuid: 579657e6-b489-4b8a-b20d-5699684016c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.doi
+    - node.type.item_standard_chapter
+  module:
+    - text
+id: node.item_standard_chapter.doi
+field_name: doi
+entity_type: node
+bundle: item_standard_chapter
+label: doi
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

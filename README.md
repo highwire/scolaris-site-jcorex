@@ -1,6 +1,7 @@
 
+
 ## SMART Site url(s):
- - https://smart.highwire.org/site/hwjma
+ - Add your SMART site url here...
 
 ## Documentation
  - [Config Management](docs/CONFIG.md)

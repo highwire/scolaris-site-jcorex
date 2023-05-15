@@ -1,0 +1,32 @@
+uuid: caf26f51-9f5e-45e8-b3c2-bbe8f5f2fd51
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.tms
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+id: search
+label: Search
+index_id: tms
+suggester_settings:
+  server:
+    fields:
+      - title_plain
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 5
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: 0

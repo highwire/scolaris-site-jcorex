@@ -1,0 +1,20 @@
+uuid: 50c452c6-7b3d-4024-92e6-da9d35e64e5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - highwire_markup_display
+    - node
+id: node.hwmd_full_text_standard
+field_name: hwmd_full_text_standard
+entity_type: node
+type: HWMarkupDisplay
+settings:
+  case_sensitive: false
+module: highwire_markup_display
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

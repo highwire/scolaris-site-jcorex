@@ -1,0 +1,19 @@
+uuid: 297046f2-bb37-4a15-a4ef-682eff659d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.apath
+    - node.type.item_reference
+id: node.item_reference.apath
+field_name: apath
+entity_type: node
+bundle: item_reference
+label: Apath
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

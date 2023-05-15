@@ -1,0 +1,21 @@
+uuid: 0210761d-332b-49cc-9cb9-af19c7a12f95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_part_url
+    - node.type.item_reference
+id: node.item_reference.first_part_url
+field_name: first_part_url
+entity_type: node
+bundle: item_reference
+label: first-part-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

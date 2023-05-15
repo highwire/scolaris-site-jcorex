@@ -1,0 +1,21 @@
+uuid: 9207f327-a419-403a-9a4a-7e2f66f6c205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition_id
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.edition_id
+field_name: edition_id
+entity_type: node
+bundle: item_commentary_section
+label: edition-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

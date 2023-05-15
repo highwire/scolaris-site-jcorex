@@ -1,0 +1,11 @@
+uuid: 230e9fa2-13d2-4d0e-b3f0-835ff51a8caf
+langcode: en
+status: true
+dependencies: {  }
+name: item_standard
+type: item_standard
+description: 'Auto generated HighWire content type for item-standard'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

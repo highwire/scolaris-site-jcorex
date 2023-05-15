@@ -1,0 +1,110 @@
+// Buttons Setting
+
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: 500 !important;
+    color: $body-color;
+    text-align: center;
+    text-decoration: none;
+    white-space: null;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    padding: 6px 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 2.5;
+    border-radius: 5px !important;
+    font-size: 15px;
+    overflow: hidden;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    position: relative;
+    &::after {
+        content: "\e912";
+        font-family: 'feather';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition: all 0.3s ease 0.2s;
+        -moz-transition: all 0.3s ease 0.2s;
+        -ms-transition: all 0.3s ease 0.2s;
+        -o-transition: all 0.3s ease 0.2s;
+        transition: all 0.3s ease 0.1s;
+        display: inline-block;
+        position: absolute;
+        right: -50px;
+        line-height: 2.5;
+        pointer-events: none;
+    }  
+    &:hover,
+    &:focus,
+    &.active {
+        opacity: 0.8;
+        &::after {
+            right: 10px;
+            -webkit-transition: right .3s .2s;
+            -moz-transition: right .3s .2s;
+            -ms-transition: right .3s .2s;
+            -o-transition: right .3s .2s;
+            transition: right .3s .2s;
+        }
+    }  
+    .btn-check:focus + &,
+    &:focus {
+        outline: 0;
+    }  
+    &:disabled,
+    &.disabled,
+    fieldset:disabled & {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+        @include box-shadow(none);
+    }
+}
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+// Link buttons  
+.btn-link {
+    font-weight: $font-weight-normal;
+    color: $btn-link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $btn-link-hover-color;
+        text-decoration: none;
+    }  
+    &:focus {
+        text-decoration: none;
+    }  
+    &:disabled,
+    &.disabled {
+        color: $btn-link-disabled-color;
+    }
+}
+
+// Button Sizes
+.btn-large-tablet {
+    @include button-size($btn-padding-y-large-tablet, $btn-padding-x-large-tablet, $btn-font-size-large-tablet, $btn-border-radius-large-tablet);
+    line-height: 1.775rem;
+}  
+.btn-small-tablet {
+    @include button-size($btn-padding-y-small-tablet, $btn-padding-x-small-tablet, $btn-font-size-small-tablet, $btn-border-radius-small-tablet);
+    padding: 0.313rem 1rem;
+    line-height: 1.5rem;
+}
+

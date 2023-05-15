@@ -1,0 +1,21 @@
+uuid: 2d2e755c-b8ba-4383-bacb-df45534a5707
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition_id
+    - node.type.item_reference
+  module:
+    - text
+id: node.item_reference.edition_id
+field_name: edition_id
+entity_type: node
+bundle: item_reference
+label: edition-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 5b2094bf-33df-4c7d-80ee-4dac9dda95f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_back_matter_commentary_url
+    - node.type.item_standard
+id: node.item_standard.first_back_matter_commentary_url
+field_name: first_back_matter_commentary_url
+entity_type: node
+bundle: item_standard
+label: first-back-matter-commentary-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

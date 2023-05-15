@@ -1,0 +1,17 @@
+uuid: dbf7e501-3900-441e-b26c-14af39d9dc8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Standard Info'
+type: standard_info
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

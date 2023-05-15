@@ -1,0 +1,21 @@
+uuid: 50e0e9a5-55e4-419a-9a0d-64d21e7534d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_has_body
+    - node.type.item_commentary_section
+id: node.item_commentary_section.standard_has_body
+field_name: standard_has_body
+entity_type: node
+bundle: item_commentary_section
+label: standard-has-body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 1630bedf-1792-48f8-b607-5b256cac80aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.title_plain
+field_name: title_plain
+entity_type: node
+bundle: item_commentary_section
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

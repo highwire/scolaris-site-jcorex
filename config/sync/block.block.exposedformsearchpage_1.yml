@@ -1,0 +1,23 @@
+uuid: 4ad4858c-fa12-443c-aed3-1ca18cf2bffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - tms
+id: exposedformsearchpage_1
+theme: tms
+region: search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

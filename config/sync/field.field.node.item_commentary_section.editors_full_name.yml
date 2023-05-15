@@ -1,0 +1,21 @@
+uuid: aa49da78-5b73-4916-9bd2-6236e8c23963
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.editors_full_name
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.editors_full_name
+field_name: editors_full_name
+entity_type: node
+bundle: item_commentary_section
+label: editors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

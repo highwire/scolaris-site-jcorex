@@ -1,0 +1,21 @@
+uuid: aa60918b-6195-4481-babf-393b7086eb19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_section_type
+    - node.type.item_part
+  module:
+    - text
+id: node.item_part.standard_section_type
+field_name: standard_section_type
+entity_type: node
+bundle: item_part
+label: standard-section-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

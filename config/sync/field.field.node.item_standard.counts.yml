@@ -1,0 +1,37 @@
+uuid: 41de0a5b-78cd-4971-9fb6-904b8f427c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.counts
+    - node.type.item_standard
+  module:
+    - double_field
+id: node.item_standard.counts
+field_name: counts
+entity_type: node
+bundle: item_standard
+label: counts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

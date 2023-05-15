@@ -1,0 +1,21 @@
+uuid: 17d0805c-457d-4f33-a0b2-95ad6b7664b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard
+    - node.type.item_back_matter
+id: node.item_back_matter.standard
+field_name: standard
+entity_type: node
+bundle: item_back_matter
+label: standard
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

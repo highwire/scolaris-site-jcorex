@@ -1,0 +1,21 @@
+uuid: da9324b4-bd9c-4080-ae1d-7619aae55395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.commentary_id
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.commentary_id
+field_name: commentary_id
+entity_type: node
+bundle: item_cover
+label: commentary-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

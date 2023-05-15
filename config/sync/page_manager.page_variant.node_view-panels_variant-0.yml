@@ -1,0 +1,99 @@
+uuid: c0c6c099-a622-4634-a843-73e2c7be5b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - system.menu.company-info
+    - system.menu.resources
+  module:
+    - ctools
+    - panels
+    - system
+id: node_view-panels_variant-0
+label: 'CMS Pages'
+variant: panels_variant
+variant_settings:
+  blocks:
+    ba42407c-bada-47d3-8e43-4d2509131d1f:
+      id: 'system_menu_block:resources'
+      label: ' Resources'
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 1
+      uuid: ba42407c-bada-47d3-8e43-4d2509131d1f
+      context_mapping: {  }
+    2b97112b-cbc4-4761-aeed-03a298141d49:
+      id: 'system_menu_block:company-info'
+      label: 'Company info'
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 0
+      uuid: 2b97112b-cbc4-4761-aeed-03a298141d49
+      context_mapping: {  }
+    f7d09d6f-b944-4b0c-a6f9-bf5c68a744e6:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: right
+      weight: 0
+      uuid: f7d09d6f-b944-4b0c-a6f9-bf5c68a744e6
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: 9991a357-a0a2-47cb-83bf-f967c2fdf011
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+  -
+    id: request_path
+    pages: /my-account/annotations
+    negate: true
+    context_mapping: {  }
+selection_logic: and
+static_context: {  }

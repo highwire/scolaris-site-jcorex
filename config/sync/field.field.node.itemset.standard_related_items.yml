@@ -1,0 +1,21 @@
+uuid: fe07c4d4-e030-4e7e-9464-280929dcd388
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_related_items
+    - node.type.itemset
+id: node.itemset.standard_related_items
+field_name: standard_related_items
+entity_type: node
+bundle: itemset
+label: standard-related-items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

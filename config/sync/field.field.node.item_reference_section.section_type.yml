@@ -1,0 +1,21 @@
+uuid: bfbc6cb6-1c11-42c5-9b3f-4e2975db3d71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_type
+    - node.type.item_reference_section
+  module:
+    - text
+id: node.item_reference_section.section_type
+field_name: section_type
+entity_type: node
+bundle: item_reference_section
+label: section-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

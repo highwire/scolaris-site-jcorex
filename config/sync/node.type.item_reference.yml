@@ -1,0 +1,11 @@
+uuid: afe82ad8-b201-429b-a1aa-f056180e19f9
+langcode: en
+status: true
+dependencies: {  }
+name: item_reference
+type: item_reference
+description: 'Auto generated HighWire content type for item-reference'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

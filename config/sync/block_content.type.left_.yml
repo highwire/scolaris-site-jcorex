@@ -1,0 +1,8 @@
+uuid: 72a7952b-012a-439e-89b7-055f14aeb005
+langcode: en
+status: true
+dependencies: {  }
+id: left_
+label: 'Left footer'
+revision: 0
+description: ''

@@ -1,0 +1,21 @@
+uuid: 11f28fb7-81a6-4314-8d8b-ce32ee9605fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_title
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.section_title
+field_name: section_title
+entity_type: node
+bundle: item_front_matter
+label: section-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

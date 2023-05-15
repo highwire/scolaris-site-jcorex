@@ -1,0 +1,21 @@
+uuid: 61d046e1-1ca0-4af2-b602-ef604551fdd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.fpage
+    - node.type.item_reference
+  module:
+    - text
+id: node.item_reference.fpage
+field_name: fpage
+entity_type: node
+bundle: item_reference
+label: fpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

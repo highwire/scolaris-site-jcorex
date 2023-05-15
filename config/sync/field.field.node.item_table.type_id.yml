@@ -1,0 +1,21 @@
+uuid: b146b083-960d-4468-9884-f9591ddfa7d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.type_id
+    - node.type.item_table
+  module:
+    - text
+id: node.item_table.type_id
+field_name: type_id
+entity_type: node
+bundle: item_table
+label: type-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

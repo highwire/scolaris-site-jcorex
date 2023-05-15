@@ -1,0 +1,21 @@
+uuid: 4f462aba-d989-4a69-af28-44e8aab11323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_standard
+    - node.type.item_reference
+id: node.item_reference.parent_standard
+field_name: parent_standard
+entity_type: node
+bundle: item_reference
+label: parent-standard
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

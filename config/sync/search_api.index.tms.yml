@@ -1,0 +1,188 @@
+uuid: f5d89e5b-cece-4813-bcc1-cf162783f364
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - node
+    - search_api
+  config:
+    - field.storage.node.apath
+    - field.storage.node.cover_image
+    - field.storage.node.date_ppub
+    - field.storage.node.doi
+    - field.storage.node.parent_standard
+    - field.storage.node.title_plain
+    - search_api.server.tms_solr
+    - core.entity_view_mode.node.full_text_markup
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    advanced:
+      index_prefix: ''
+id: tms
+name: TMS
+description: ''
+read_only: false
+field_settings:
+  apath:
+    label: Apath
+    datasource_id: 'entity:node'
+    property_path: apath
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.apath
+  cover_image:
+    label: cover-image
+    datasource_id: 'entity:node'
+    property_path: cover_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.cover_image
+  date_ppub:
+    label: 'Published Date (Facets)'
+    datasource_id: 'entity:node'
+    property_path: date_ppub
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.date_ppub
+  doi:
+    label: doi
+    datasource_id: 'entity:node'
+    property_path: doi
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.doi
+  parent_standard:
+    label: 'Parent standard'
+    datasource_id: 'entity:node'
+    property_path: parent_standard
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.parent_standard
+  rendered_item:
+    label: 'Full Text'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        administrator: administrator
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          item_commentary_chapter: full_text_markup
+          item_commentary_section: full_text_markup
+          item_figure: ''
+          item_standard: ''
+          item_standard_chapter: full_text_markup
+          item_standard_section: full_text_markup
+          item_table: ''
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  title_plain:
+    label: title-plain
+    datasource_id: 'entity:node'
+    property_path: title_plain
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.title_plain
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - item_commentary_chapter
+        - item_commentary_section
+        - item_figure
+        - item_standard
+        - item_standard_chapter
+        - item_standard_section
+        - item_table
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - parent_standard
+      - rendered_item
+      - title
+      - title_plain
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: tms_solr

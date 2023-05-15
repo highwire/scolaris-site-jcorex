@@ -1,0 +1,21 @@
+uuid: af016beb-2080-432b-a382-2b140652648a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.editors_full_name
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.editors_full_name
+field_name: editors_full_name
+entity_type: node
+bundle: item_front_matter
+label: editors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

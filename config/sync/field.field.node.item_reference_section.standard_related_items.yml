@@ -1,0 +1,21 @@
+uuid: b6cf2234-a488-459c-a7cb-3ca02a08fa5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_related_items
+    - node.type.item_reference_section
+id: node.item_reference_section.standard_related_items
+field_name: standard_related_items
+entity_type: node
+bundle: item_reference_section
+label: standard-related-items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

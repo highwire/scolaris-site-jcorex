@@ -1,0 +1,21 @@
+uuid: 3e1ad36f-4b04-443b-8c2f-0ef3f4e067f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition
+    - node.type.item_cover
+  module:
+    - text
+id: node.item_cover.edition
+field_name: edition
+entity_type: node
+bundle: item_cover
+label: edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

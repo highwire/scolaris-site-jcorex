@@ -1,0 +1,28 @@
+uuid: 0f033c73-9f4f-449c-8d57-5dbd9cd3621e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_commentary_section
+    - node.type.item_commentary_section
+    - node.type.resource_title_group
+id: node.resource_title_group.field_commentary_section
+field_name: field_commentary_section
+entity_type: node
+bundle: resource_title_group
+label: 'Commentary section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'highwire:node'
+  handler_settings:
+    target_bundles:
+      item_commentary_section: item_commentary_section
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: entity_reference

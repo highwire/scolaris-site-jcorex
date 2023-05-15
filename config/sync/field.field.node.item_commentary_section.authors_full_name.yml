@@ -1,0 +1,21 @@
+uuid: 259941fa-3725-40f3-99c9-0f3b77dac962
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: item_commentary_section
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

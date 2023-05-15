@@ -1,0 +1,8 @@
+name: ASCE Content Display
+type: module
+description: Front-end customizations for ASCE content.
+core: 8.x
+package: 'Scolaris  '
+
+libraries:
+  - asce_content_display/quickactions

@@ -1,0 +1,21 @@
+uuid: 2dd7d69e-4ba9-44e4-9220-9c61bcf2c0d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_ebook
+    - node.type.item_standard_section
+  module:
+    - text
+id: node.item_standard_section.isbn_ebook
+field_name: isbn_ebook
+entity_type: node
+bundle: item_standard_section
+label: isbn-ebook
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

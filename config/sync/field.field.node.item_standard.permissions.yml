@@ -1,0 +1,21 @@
+uuid: 903ec52e-8fba-48c3-a9da-79ff9361c9ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permissions
+    - node.type.item_standard
+  module:
+    - text
+id: node.item_standard.permissions
+field_name: permissions
+entity_type: node
+bundle: item_standard
+label: permissions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

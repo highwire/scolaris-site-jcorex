@@ -1,0 +1,21 @@
+uuid: a4d7e29b-ab95-41b5-905e-12cccd0caf53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.item_commentary_chapter
+  module:
+    - text
+id: node.item_commentary_chapter.title_plain
+field_name: title_plain
+entity_type: node
+bundle: item_commentary_chapter
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

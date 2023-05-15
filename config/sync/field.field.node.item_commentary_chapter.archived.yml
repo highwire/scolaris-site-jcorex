@@ -1,0 +1,21 @@
+uuid: 8d518f5e-a3b5-4df9-9320-9ee63fd0c56c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.archived
+    - node.type.item_commentary_chapter
+id: node.item_commentary_chapter.archived
+field_name: archived
+entity_type: node
+bundle: item_commentary_chapter
+label: archived
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

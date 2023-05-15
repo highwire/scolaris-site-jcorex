@@ -1,0 +1,19 @@
+uuid: c41f42b0-8c36-4367-8877-4ec3ca289cb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.first_front_matter_standard_url
+field_name: first_front_matter_standard_url
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

@@ -1,0 +1,12 @@
+uuid: d2471093-1009-4a40-8c89-b3d10dce1296
+langcode: en
+status: true
+dependencies: {  }
+id: standards
+label: Standards
+description: ''
+use_admin_theme: false
+path: /standards
+access_logic: and
+access_conditions: {  }
+parameters: {  }

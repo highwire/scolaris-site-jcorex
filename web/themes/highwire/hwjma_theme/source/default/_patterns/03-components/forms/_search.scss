@@ -1,0 +1,100 @@
+$component: ".search";
+#{$component} {     
+    @extend .py-4;
+    background: $secondary-light;
+    &__row{
+        @extend .row;
+        @extend .justify-content-center;  
+    } 
+    &__formcontrol{
+        @extend .form-control;
+        @extend .form-control-large-tablet;
+        max-height: 3.275rem;
+        min-height: 3.275rem;
+        margin: 0;
+        background-image: none !important;
+        border-color: $secondary-dark;
+        padding-right: 45px;
+        @include media-breakpoint-down(medium-tablet) {
+            padding-right: 60px;
+        }
+        &::placeholder {
+            color: $primary-light;
+        }
+    } 
+    &__icon:after {
+        font-size: 1.5rem;
+        top: 50%;
+        margin-top: -12px;
+        color: $primary-light;
+        right: 15px;
+        content: "\e9c1";
+        font-family: "feather";
+        @extend .align-middle;
+        @extend .position-absolute;
+    } 
+    &__position{      
+         @extend .d-flex;    
+         @extend .flex-fill;    
+         @extend .position-relative;        
+    }
+    .form-actions {        
+        @include media-breakpoint-down(medium-tablet) {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            margin: 0;
+            &::after {
+                content: "\e9c1";
+                font-family: "feather";
+                font-size: 1.5rem;
+                color: $white;
+                position: absolute;
+                top: 10px;
+                z-index: 10;
+                right: 12px;
+                pointer-events: none;
+            }
+        }
+        .btn-search{
+            @extend .btn-large-tablet;
+            margin-left: 0.5rem !important;
+            @extend .btn-danger;
+            @extend .rounded;
+            max-height: 60px;
+            @include media-breakpoint-down(	medium-tablet) {
+                margin-left: 0 !important;
+                margin-top: 0;
+                font-size: 0;
+                padding: 11px 24px 12px;
+            }
+            &:hover,
+            &:focus {
+                opacity: 0.8;
+            }
+        }
+    } 
+     // Spin icon rotate animation
+     .search-loading::after {
+        animation: rotate-animation 1.5s infinite linear;
+        -webkit-animation: rotate-animation 1.5s infinite linear;
+    }
+    @keyframes rotate-animation {
+        0% {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+
+    }
+    .search__icon:after {
+        content: "\e9b9" !important;
+    }
+}

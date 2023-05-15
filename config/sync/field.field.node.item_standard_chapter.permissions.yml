@@ -1,0 +1,21 @@
+uuid: a7e68423-633b-424a-9cbc-614738254b17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permissions
+    - node.type.item_standard_chapter
+  module:
+    - text
+id: node.item_standard_chapter.permissions
+field_name: permissions
+entity_type: node
+bundle: item_standard_chapter
+label: permissions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

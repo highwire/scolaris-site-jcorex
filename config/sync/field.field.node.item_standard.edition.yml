@@ -1,0 +1,21 @@
+uuid: a1017629-6a4b-4be6-a281-ffcdc79e27dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.edition
+    - node.type.item_standard
+  module:
+    - text
+id: node.item_standard.edition
+field_name: edition
+entity_type: node
+bundle: item_standard
+label: edition
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

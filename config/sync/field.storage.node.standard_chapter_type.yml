@@ -1,0 +1,19 @@
+uuid: 0981dc3c-7a17-4f57-997c-10b4feaa4927
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.standard_chapter_type
+field_name: standard_chapter_type
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

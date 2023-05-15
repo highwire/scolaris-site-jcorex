@@ -1,0 +1,8 @@
+uuid: 0b4723af-7edc-4b58-92ec-fdfaf607e307
+langcode: en
+status: true
+dependencies: {  }
+id: the-standards-online
+label: 'The Standards Online'
+description: ''
+locked: false

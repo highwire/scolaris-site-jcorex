@@ -1,0 +1,134 @@
+blocks:
+  -
+    info: 'Home Static Search'
+    langcode: en
+    uuid: 3c6b390a-7e36-41d9-bf62-ef6818407d11
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<div class=\"search\">\r\n<div class=\"container\">\r\n<div class=\"search__row\">\r\n<div class=\"col-12 col-desktop-10\">\r\n<form accept-charset=\"UTF-8\" action=\"/search\" class=\"d-flex input-group earch-filter-right\" id=\"views-exposed-form-search-page-1\" method=\"get\">\r\n<div class=\"js-form-item form-item js-form-type-search-api-autocomplete form-item-query js-form-item-query form-no-label search__position search__icon\"><input class=\"form-text form-control search__formcontrol\" data-drupal-selector=\"edit-query\" id=\"edit-query--3\" maxlength=\"128\" name=\"query\" placeholder=\"Search across our standards\" size=\"30\" type=\"text\" value=\"\" /></div>\r\n<!-- END OUTPUT from 'themes/highwire/tms_theme/apps/drupal-default/tms_theme/templates/form/form-element.html.twig' -->\r\n\r\n<div class=\"form-actions form-group mx-3\" data-drupal-selector=\"edit-actions\" id=\"edit-actions--2\"><!-- THEME DEBUG --><!-- THEME HOOK: 'input__submit' --><!-- BEGIN OUTPUT from 'themes/highwire/tms_theme/apps/drupal-default/tms_theme/templates/form/input.html.twig' --><input class=\"btn btn-search button js-form-submit form-submit\" data-drupal-selector=\"edit-submit-search-3\" id=\"edit-submit-search--3\" type=\"submit\" value=\"Search\" /> <!-- END OUTPUT from 'themes/highwire/tms_theme/apps/drupal-default/tms_theme/templates/form/input.html.twig' --></div>\r\n</form>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: Homepaage-Banner
+    langcode: en
+    uuid: 14d404be-e5f0-4f69-8097-b257cc82ed85
+    bundle: home_banner
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><b><span lang=\"EN-US\" style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Masonry Standards Online</span></span></span></b><span lang=\"EN-US\" style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\"> (MSO) Going beyond&nbsp;printed&nbsp;standards though easy online access of TMS’ masonry standards with enhanced commentary, complete internal linking, deep searching capabilities, and extensive linking to papers, webinars, guides, and&nbsp;other resources!</span></span></span></p>\r\n"
+          summary: ''
+          format: full_html
+      field_banner_title:
+        -
+          value: 'The Masonry Standard online'
+      field_button_1:
+        -
+          uri: 'https://staging-ui.sams-sigma.com/'
+          title: 'Access '
+          options: {  }
+      field_button_2:
+        -
+          uri: 'internal:#'
+          title: 'TMS Website '
+          options: {  }
+  -
+    info: 'Standard Listing Page Header'
+    langcode: en
+    uuid: d50d16c0-2302-4c45-836f-75b2807defc8
+    bundle: landing_page_header
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><span><span><span>The Masonry Society - Going beyond printed standards though easy online access of TMS’ masonry standards with enhanced commentary, complete internal linking, deep searching capabilities, and extensive linking to papers, webinars, guides, and other resources!</span></span></span></p>\r\n"
+          summary: ''
+          format: basic_html
+      field_landing_page_header_title:
+        -
+          value: Standards
+  -
+    info: 'Static search within'
+    langcode: en
+    uuid: 0437d710-5778-4e4b-922e-13f428e767d7
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<div class=\"journal-article-search\">\r\n<form class=\"d-flex input-group\" id=\"form-journal-search\">\r\n<div class=\"search__position js-form-type-textfield\"><input class=\"form-text\" id=\"id\" placeholder=\"Search within this Standard\" required=\"\" type=\"text\" value=\"\" /></div>\r\n<button class=\"form-submit\" type=\"submit\">Search</button></form>\r\n</div>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: Standards
+    langcode: en
+    uuid: 85a9afc1-6bf6-41fa-b938-08fbb719e469
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>The TMS standards helps test users identify an appropriate test suitable for their needs. Over 160 standards have been reviewed by our editorial team, who are all&nbsp; &nbsp;experts in the field of testing and test use.</p>\r\n"
+          summary: ''
+          format: basic_html
+  -
+    info: 'Footer copyright'
+    langcode: en
+    uuid: be84596c-58a0-46e6-92b5-9db42801a350
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>© 2023 The Masonry Society. All Rights Reserved.</p>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Footer data'
+    langcode: en
+    uuid: c6525565-723d-4008-9fa1-8361b279172a
+    bundle: left_
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Formed in 1977, The Masonry Society (TMS) is an educational, scientific, and technical society dedicated to the advancement of scientific, engineering, architectural, and construction knowledge of masonry.</p>\r\n\r\n<p>The Society is a not-for-profit, membership driven organization that gathers, correlates, and disseminates information for the improvement of the design, construction, manufacture, use, and maintenance of masonry products and structures.</p>\r\n\r\n<p>As part of these efforts, TMS develops standards, guides, and other resources, educates through seminars, workshops, conferences, and collaborates with the construction industry, design profession and other leaders desiring to see a better and more resilient built environment.</p>\r\n"
+          summary: ''
+          format: full_html
+      field_enable_social_media_icon:
+        -
+          value: '0'
+      field_footer_logo_image:
+        -
+          value: "<p><a href=\"/\"><img src=\"data:image/jpeg;base64,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\" /></a></p>\r\n"
+          summary: ''
+          format: full_html
+      field_social_media_icon:
+        -
+          value: "<div class=\"flex flex-wrap\">\r\n<div class=\"flex-grow w-full social-share\"><a class=\"twitter\" href=\"https://twitter.com\" title=\"Follow Masonry Society on Twitter\"><svg height=\"21px\" version=\"1.1\" viewbox=\"0 0 22 21\" width=\"22px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<title></title>\r\n<g fill=\"none\" fill-rule=\"evenodd\" id=\"Symbols\" stroke=\"none\" stroke-width=\"1\"><g id=\"twitter\"><rect height=\"20.38\" id=\"Rectangle\" width=\"22\" x=\"0\" y=\"0\"></rect><path d=\"M22,3.11658333 C21.1905833,3.47591667 20.3206667,3.71791667 19.4076667,3.827 C20.3399167,3.26875 21.0558333,2.38416667 21.39225,1.33 C20.5205,1.847 19.5543333,2.22283333 18.5258333,2.42541667 C17.7035833,1.54816667 16.5293333,1 15.2313333,1 C12.31725,1 10.1759167,3.71883333 10.8340833,6.54125 C7.084,6.35333333 3.75833333,4.55666667 1.53175,1.82591667 C0.34925,3.8545 0.9185,6.50825 2.92783333,7.85208333 C2.189,7.82825 1.49233333,7.62566667 0.884583333,7.28741667 C0.835083333,9.37833333 2.33383333,11.3345 4.5045,11.7699167 C3.86925,11.94225 3.1735,11.9825833 2.46583333,11.8469167 C3.03966667,13.6399167 4.70616667,14.9443333 6.6825,14.981 C4.785,16.46875 2.39433333,17.1333333 0,16.851 C1.99741667,18.1315833 4.37066667,18.8786667 6.919,18.8786667 C15.2991667,18.8786667 20.03375,11.8010833 19.74775,5.45316667 C20.6295833,4.81608333 21.395,4.02133333 22,3.11658333 Z\" fill=\"#FFFFFF\" fill-rule=\"nonzero\" id=\"Combined-Shape-Copy\"></path></g></g></svg></a><a class=\"facebook\" href=\"https://www.facebook.com\" title=\"Follow Masonry Society on Facebook\"><svg height=\"21px\" version=\"1.1\" viewbox=\"0 0 22 21\" width=\"22px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<title></title>\r\n<g fill=\"none\" fill-rule=\"evenodd\" id=\"Symbols\" stroke=\"none\" stroke-width=\"1\"><g id=\"fb\"><rect height=\"20.38\" id=\"Rectangle-Copy-6\" width=\"22\" x=\"0\" y=\"0\"></rect><path d=\"M9.128,20.375 L9.128,11.081 L6,11.081 L6,7.459 L9.128,7.459 L9.128,4.788 C9.128,1.688 11.021,0 13.787,0 C15.112,0 16.25,0.099 16.582,0.143 L16.582,3.383 L14.664,3.384 C13.16,3.384 12.869,4.099 12.869,5.147 L12.869,7.46 L16.456,7.46 L15.989,11.082 L12.869,11.082 L12.869,20.375 L9.128,20.375 Z\" fill=\"#FFFFFF\" fill-rule=\"nonzero\" id=\"Path-Copy\"></path></g></g></svg></a> <a class=\"youtube\" href=\"https://www.youtube.com\" title=\"Follow Masonry Society on YouTube\"><svg height=\"21px\" version=\"1.1\" viewbox=\"0 0 22 21\" width=\"22px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<title></title>\r\n<g fill=\"none\" fill-rule=\"evenodd\" id=\"Symbols\" stroke=\"none\" stroke-width=\"1\"><g id=\"yt\"><rect height=\"20.38\" id=\"Rectangle-Copy-8\" width=\"22\" x=\"0\" y=\"0\"></rect><polygon fill=\"#FFFFFF\" fill-rule=\"nonzero\" id=\"Path-Copy\" points=\"3 18 3 2 19 9.986 3 18\"></polygon></g></g></svg></a> <a class=\"linkedin\" href=\"https://www.linkedin.com/\" title=\"Follow Masonry Society on LinkedIn\"><svg height=\"21px\" version=\"1.1\" viewbox=\"0 0 22 21\" width=\"22px\" xmlns=\"http://www.w3.org/2000/svg\">\r\n<title></title>\r\n<g fill=\"none\" fill-rule=\"evenodd\" id=\"Symbols\" stroke=\"none\" stroke-width=\"1\"><g id=\"li\"><rect height=\"20.38\" id=\"Rectangle-Copy-7\" width=\"22\" x=\"0\" y=\"0\"></rect><path d=\"M5.83606557,6.66085246 L5.83606557,19.644459 L2.29508197,19.644459 L2.29508197,6.66085246 L5.83606557,6.66085246 Z M11.7377049,6.66085246 L11.7377049,8.74413115 C13.3854426,5.69180328 20,5.46636066 20,11.666623 L20,19.644459 L16.4590164,19.644459 L16.4590164,13.0299016 C16.4590164,9.05455738 11.7377049,9.35554098 11.7377049,13.0299016 L11.7377049,19.644459 L8.19672131,19.644459 L8.19672131,6.66085246 L11.7377049,6.66085246 Z M4.06557377,1 C5.20577049,1 6.13114754,1.93245902 6.13114754,3.08209836 C6.13114754,4.2317377 5.20695082,5.16419672 4.06557377,5.16419672 C2.92537705,5.16419672 2,4.2317377 2,3.08209836 C2,1.93245902 2.92537705,1 4.06557377,1 Z\" fill=\"#FFFFFF\" fill-rule=\"nonzero\" id=\"Combined-Shape-Copy\"></path></g></g></svg></a></div>\r\n</div>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: 'Header left site branding'
+    langcode: en
+    uuid: 6892137e-1f03-4355-b223-620bfcd7b7e2
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"/\"><img src=\"data:image/jpeg;base64,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\" /></a></p>\r\n"
+          summary: ''
+          format: full_html

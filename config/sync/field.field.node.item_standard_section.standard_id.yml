@@ -1,0 +1,21 @@
+uuid: c146d428-2663-408b-9ba5-b9cb2ebe5cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_id
+    - node.type.item_standard_section
+  module:
+    - text
+id: node.item_standard_section.standard_id
+field_name: standard_id
+entity_type: node
+bundle: item_standard_section
+label: standard-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

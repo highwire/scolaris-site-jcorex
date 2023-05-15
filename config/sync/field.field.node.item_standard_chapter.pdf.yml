@@ -1,0 +1,27 @@
+uuid: 0debf793-de3a-48be-b49f-a11adaf28f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pdf
+    - node.type.item_standard_chapter
+  module:
+    - file
+id: node.item_standard_chapter.pdf
+field_name: pdf
+entity_type: node
+bundle: item_standard_chapter
+label: pdf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

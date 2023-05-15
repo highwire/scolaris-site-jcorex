@@ -1,0 +1,10 @@
+uuid: 25ea13ed-8f56-4f09-bc2e-f6930eae59f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.full_text_markup
+label: 'Full text markup'
+targetEntityType: node
+cache: true

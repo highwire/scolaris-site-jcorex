@@ -1,0 +1,21 @@
+uuid: 69902d7d-f6b9-4f47-a1a9-2bd794e1ad2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_section_label
+    - node.type.itemset
+  module:
+    - text
+id: node.itemset.standard_section_label
+field_name: standard_section_label
+entity_type: node
+bundle: itemset
+label: standard-section-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

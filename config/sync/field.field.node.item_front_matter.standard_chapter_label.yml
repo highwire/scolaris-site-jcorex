@@ -1,0 +1,21 @@
+uuid: f0230c29-7a1e-4dcc-a402-11f36b987a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_chapter_label
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.standard_chapter_label
+field_name: standard_chapter_label
+entity_type: node
+bundle: item_front_matter
+label: standard-chapter-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

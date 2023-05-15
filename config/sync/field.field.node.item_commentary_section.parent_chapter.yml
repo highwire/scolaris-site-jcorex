@@ -1,0 +1,21 @@
+uuid: af3aa91d-ea26-4c4a-a31d-3cef363390c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_chapter
+    - node.type.item_commentary_section
+id: node.item_commentary_section.parent_chapter
+field_name: parent_chapter
+entity_type: node
+bundle: item_commentary_section
+label: parent-chapter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

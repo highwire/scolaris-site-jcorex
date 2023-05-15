@@ -1,0 +1,21 @@
+uuid: c087a430-8a4f-4cef-a1ff-3c855c7e1c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_part_url
+    - node.type.item_standard
+id: node.item_standard.first_part_url
+field_name: first_part_url
+entity_type: node
+bundle: item_standard
+label: first-part-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,167 @@
+uuid: da3b4272-b7b4-4fac-89b7-5dd9b27717ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.item_standard_section.apath
+    - field.field.node.item_standard_section.archived
+    - field.field.node.item_standard_section.atom_id
+    - field.field.node.item_standard_section.authors_full_name
+    - field.field.node.item_standard_section.binary
+    - field.field.node.item_standard_section.chapter_type
+    - field.field.node.item_standard_section.children
+    - field.field.node.item_standard_section.commentary
+    - field.field.node.item_standard_section.commentary_id
+    - field.field.node.item_standard_section.commentary_related_items
+    - field.field.node.item_standard_section.commentary_url
+    - field.field.node.item_standard_section.contributors_xml
+    - field.field.node.item_standard_section.corpus
+    - field.field.node.item_standard_section.counts
+    - field.field.node.item_standard_section.cover_image
+    - field.field.node.item_standard_section.date_atom_release
+    - field.field.node.item_standard_section.date_atom_updated
+    - field.field.node.item_standard_section.date_edition
+    - field.field.node.item_standard_section.date_ppub
+    - field.field.node.item_standard_section.date_print_publication
+    - field.field.node.item_standard_section.description
+    - field.field.node.item_standard_section.disclaimer
+    - field.field.node.item_standard_section.doi
+    - field.field.node.item_standard_section.edition
+    - field.field.node.item_standard_section.edition_id
+    - field.field.node.item_standard_section.editors_full_name
+    - field.field.node.item_standard_section.extract_policy
+    - field.field.node.item_standard_section.first_chapter_commentary_url
+    - field.field.node.item_standard_section.first_chapter_stanard_url
+    - field.field.node.item_standard_section.first_part_url
+    - field.field.node.item_standard_section.fpage
+    - field.field.node.item_standard_section.hwmd_full_text_search_index
+    - field.field.node.item_standard_section.hwmd_full_text_standard
+    - field.field.node.item_standard_section.instructor_material
+    - field.field.node.item_standard_section.isbn_ebook
+    - field.field.node.item_standard_section.isbn_ebook_compact
+    - field.field.node.item_standard_section.isbn_print
+    - field.field.node.item_standard_section.isbn_print_compact
+    - field.field.node.item_standard_section.item_type
+    - field.field.node.item_standard_section.keywords
+    - field.field.node.item_standard_section.lpage
+    - field.field.node.item_standard_section.mime_type
+    - field.field.node.item_standard_section.parent
+    - field.field.node.item_standard_section.parent_chapter
+    - field.field.node.item_standard_section.parent_standard
+    - field.field.node.item_standard_section.pdf
+    - field.field.node.item_standard_section.permissions
+    - field.field.node.item_standard_section.publisher
+    - field.field.node.item_standard_section.registered_test
+    - field.field.node.item_standard_section.related_objects
+    - field.field.node.item_standard_section.section_title
+    - field.field.node.item_standard_section.section_type
+    - field.field.node.item_standard_section.standard
+    - field.field.node.item_standard_section.standard_chapter_label
+    - field.field.node.item_standard_section.standard_chapter_type
+    - field.field.node.item_standard_section.standard_has_abstract
+    - field.field.node.item_standard_section.standard_has_body
+    - field.field.node.item_standard_section.standard_has_commentary
+    - field.field.node.item_standard_section.standard_id
+    - field.field.node.item_standard_section.standard_related_items
+    - field.field.node.item_standard_section.standard_section_label
+    - field.field.node.item_standard_section.standard_section_type
+    - field.field.node.item_standard_section.subject_groups
+    - field.field.node.item_standard_section.subtitle
+    - field.field.node.item_standard_section.supp_content_type
+    - field.field.node.item_standard_section.supplementary_material
+    - field.field.node.item_standard_section.taxonomy_terms
+    - field.field.node.item_standard_section.title_plain
+    - field.field.node.item_standard_section.type_id
+    - node.type.item_standard_section
+  module:
+    - text
+    - user
+id: node.item_standard_section.search_result
+targetEntityType: node
+bundle: item_standard_section
+mode: search_result
+content:
+  title_plain:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  apath: true
+  archived: true
+  atom_id: true
+  authors_full_name: true
+  binary: true
+  chapter_type: true
+  children: true
+  commentary: true
+  commentary_id: true
+  commentary_related_items: true
+  commentary_url: true
+  contributors_xml: true
+  corpus: true
+  counts: true
+  cover_image: true
+  date_atom_release: true
+  date_atom_updated: true
+  date_edition: true
+  date_ppub: true
+  date_print_publication: true
+  description: true
+  disclaimer: true
+  doi: true
+  edition: true
+  edition_id: true
+  editors_full_name: true
+  extract_policy: true
+  first_chapter_commentary_url: true
+  first_chapter_stanard_url: true
+  first_part_url: true
+  fpage: true
+  highwire_citations_download: true
+  hw_alerts_sign_up: true
+  hw_marker_sign_up: true
+  hw_tag_sign_up: true
+  hwmd_full_text_search_index: true
+  hwmd_full_text_standard: true
+  instructor_material: true
+  isbn_ebook: true
+  isbn_ebook_compact: true
+  isbn_print: true
+  isbn_print_compact: true
+  item_type: true
+  keywords: true
+  langcode: true
+  links: true
+  lpage: true
+  mime_type: true
+  parent: true
+  parent_chapter: true
+  parent_standard: true
+  pdf: true
+  permissions: true
+  publisher: true
+  registered_test: true
+  related_objects: true
+  section_title: true
+  section_type: true
+  standard: true
+  standard_chapter_label: true
+  standard_chapter_type: true
+  standard_has_abstract: true
+  standard_has_body: true
+  standard_has_commentary: true
+  standard_id: true
+  standard_related_items: true
+  standard_section_label: true
+  standard_section_type: true
+  subject_groups: true
+  subtitle: true
+  supp_content_type: true
+  supplementary_material: true
+  taxonomy_terms: true
+  type_id: true

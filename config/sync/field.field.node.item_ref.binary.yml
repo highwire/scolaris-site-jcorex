@@ -1,0 +1,27 @@
+uuid: ffcddcc3-40c5-43d0-9cf0-481f1e8a375a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.binary
+    - node.type.item_ref
+  module:
+    - file
+id: node.item_ref.binary
+field_name: binary
+entity_type: node
+bundle: item_ref
+label: binary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,21 @@
+uuid: ba7bcf53-46c9-460a-aaff-46f682f94936
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.item_ref
+  module:
+    - text
+id: node.item_ref.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: item_ref
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

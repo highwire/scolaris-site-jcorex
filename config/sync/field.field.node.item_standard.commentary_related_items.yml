@@ -1,0 +1,21 @@
+uuid: 404e4ddd-b536-44d2-80da-1c1b2fcdfa88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.commentary_related_items
+    - node.type.item_standard
+id: node.item_standard.commentary_related_items
+field_name: commentary_related_items
+entity_type: node
+bundle: item_standard
+label: commentary-related-items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

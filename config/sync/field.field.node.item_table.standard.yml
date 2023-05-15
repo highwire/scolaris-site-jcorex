@@ -1,0 +1,21 @@
+uuid: 22abbf46-f272-4315-92f1-0f223d426725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard
+    - node.type.item_table
+id: node.item_table.standard
+field_name: standard
+entity_type: node
+bundle: item_table
+label: standard
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

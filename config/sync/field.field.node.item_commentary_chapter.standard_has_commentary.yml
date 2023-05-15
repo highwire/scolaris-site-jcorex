@@ -1,0 +1,21 @@
+uuid: 40eac791-014b-459e-b2ca-4f072dc55884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_has_commentary
+    - node.type.item_commentary_chapter
+id: node.item_commentary_chapter.standard_has_commentary
+field_name: standard_has_commentary
+entity_type: node
+bundle: item_commentary_chapter
+label: standard-has-commentary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

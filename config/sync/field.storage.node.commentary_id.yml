@@ -1,0 +1,19 @@
+uuid: b0be03da-bc8c-43de-b90b-d91ad3db5a0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.commentary_id
+field_name: commentary_id
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: true

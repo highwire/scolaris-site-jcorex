@@ -1,0 +1,30 @@
+uuid: 52c317e5-1eae-4769-b285-23638ca00837
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource_title_group.field_commentary_section
+    - field.field.node.resource_title_group.field_res
+    - field.field.node.resource_title_group.field_standard_name
+    - field.field.node.resource_title_group.field_standard_section
+    - node.type.resource_title_group
+  module:
+    - user
+id: node.resource_title_group.teaser
+targetEntityType: node
+bundle: resource_title_group
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_commentary_section: true
+  field_res: true
+  field_standard_name: true
+  field_standard_section: true
+  langcode: true

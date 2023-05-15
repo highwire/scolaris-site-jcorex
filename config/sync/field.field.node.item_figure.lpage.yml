@@ -1,0 +1,21 @@
+uuid: c24cb940-7acd-4c1f-bbc8-f11341a303f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.lpage
+    - node.type.item_figure
+  module:
+    - text
+id: node.item_figure.lpage
+field_name: lpage
+entity_type: node
+bundle: item_figure
+label: lpage
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

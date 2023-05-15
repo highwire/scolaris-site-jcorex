@@ -1,0 +1,21 @@
+uuid: 67e5dfeb-7e10-4a05-9c89-1cdf8d5f6114
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.parent_chapter
+    - node.type.item_standard
+id: node.item_standard.parent_chapter
+field_name: parent_chapter
+entity_type: node
+bundle: item_standard
+label: parent-chapter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

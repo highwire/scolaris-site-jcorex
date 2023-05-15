@@ -1,0 +1,21 @@
+uuid: 862c4c1e-a324-4133-bc88-adcb4820887e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_section_label
+    - node.type.item_front_matter
+  module:
+    - text
+id: node.item_front_matter.standard_section_label
+field_name: standard_section_label
+entity_type: node
+bundle: item_front_matter
+label: standard-section-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

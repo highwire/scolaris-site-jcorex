@@ -1,0 +1,21 @@
+uuid: 8641d26e-dcde-4051-8e4e-7be8b9abf292
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_section_type
+    - node.type.item_table
+  module:
+    - text
+id: node.item_table.standard_section_type
+field_name: standard_section_type
+entity_type: node
+bundle: item_table
+label: standard-section-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

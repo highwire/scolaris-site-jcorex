@@ -1,0 +1,21 @@
+uuid: 18c68b9b-7ebb-4185-80c1-d37f92a0b184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_print_publication
+    - node.type.item_standard_chapter
+  module:
+    - text
+id: node.item_standard_chapter.date_print_publication
+field_name: date_print_publication
+entity_type: node
+bundle: item_standard_chapter
+label: date-print-publication
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

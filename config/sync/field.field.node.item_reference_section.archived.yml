@@ -1,0 +1,21 @@
+uuid: f33649c6-feff-4239-b49d-90566de23e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.archived
+    - node.type.item_reference_section
+id: node.item_reference_section.archived
+field_name: archived
+entity_type: node
+bundle: item_reference_section
+label: archived
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

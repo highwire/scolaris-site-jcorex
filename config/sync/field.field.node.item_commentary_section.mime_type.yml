@@ -1,0 +1,21 @@
+uuid: 80eff5b0-9d69-4fb5-ae80-c12c02ffcae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.mime_type
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.mime_type
+field_name: mime_type
+entity_type: node
+bundle: item_commentary_section
+label: mime-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

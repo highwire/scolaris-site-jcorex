@@ -1,0 +1,172 @@
+@use "sass:math";
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0 #{"/* rtl:ignore */"};
+  z-index: 999;
+  display: block;
+  max-width: 300px;
+  @include reset-text();
+  font-size: 16px;
+  word-wrap: break-word;
+  background-color: $popover-bg;
+  background-clip: padding-box;
+  border: $popover-border-width solid $popover-border-color;
+  border-radius: 2px;
+  box-shadow: 0 15px 45px -10px rgba(0, 0, 0, 0.3);
+  overflow-wrap: break-word;
+  .popover-arrow {
+    position: absolute;
+    display: block;
+    width: $popover-arrow-width;
+    height: $popover-arrow-height;
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      border-color: transparent;
+      border-style: solid;
+    }
+  }
+}
+.bs-popover-top {
+  > .popover-arrow {
+    bottom: subtract(-$popover-arrow-height, $popover-border-width);
+    &::before {
+      bottom: 0;
+      border-width: $popover-arrow-height math.div($popover-arrow-width, 2) 0;
+      border-top-color: $popover-arrow-outer-color;
+    }
+    &::after {
+      bottom: $popover-border-width;
+      border-width: $popover-arrow-height math.div($popover-arrow-width, 2) 0;
+      border-top-color: $popover-arrow-color;
+    }
+  }
+}
+.bs-popover-end {
+  > .popover-arrow {
+    left: subtract(-$popover-arrow-height, $popover-border-width);
+    width: $popover-arrow-height;
+    height: $popover-arrow-width;
+    &::before {
+      left: 0;
+      border-width: math.div($popover-arrow-width, 2) $popover-arrow-height math.div($popover-arrow-width, 2) 0;
+      border-right-color: $popover-arrow-outer-color;
+    }
+    &::after {
+      left: $popover-border-width;
+      border-width: math.div($popover-arrow-width, 2) $popover-arrow-height math.div($popover-arrow-width, 2) 0;
+      border-right-color: $popover-arrow-color;
+    }
+  }
+}
+.bs-popover-bottom {
+  > .popover-arrow {
+    top: subtract(-$popover-arrow-height, $popover-border-width);
+    &::before {
+      top: 0;
+      border-width: 0 math.div($popover-arrow-width, 2) $popover-arrow-height math.div($popover-arrow-width, 2);
+      border-bottom-color: $popover-arrow-outer-color;
+    }
+    &::after {
+      top: $popover-border-width;
+      border-width: 0 math.div($popover-arrow-width, 2) $popover-arrow-height math.div($popover-arrow-width, 2);
+      border-bottom-color: $popover-arrow-color;
+    }
+  }
+
+  // This will remove the popover-header's border just below the arrow
+  .popover-header::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: $popover-arrow-width;
+    margin-left: math.div(-$popover-arrow-width, 2);
+    content: "";
+    border-bottom: $popover-border-width solid $popover-header-bg;
+  }
+}
+
+.bs-popover-start {
+  > .popover-arrow {
+    right: subtract(-$popover-arrow-height, $popover-border-width);
+    width: $popover-arrow-height;
+    height: $popover-arrow-width;
+    &::before {
+      right: 0;
+      border-width: math.div($popover-arrow-width, 2) 0 math.div($popover-arrow-width, 2) $popover-arrow-height;
+      border-left-color: $popover-arrow-outer-color;
+    }
+    &::after {
+      right: $popover-border-width;
+      border-width: math.div($popover-arrow-width, 2) 0 math.div($popover-arrow-width, 2) $popover-arrow-height;
+      border-left-color: $popover-arrow-color;
+    }
+  }
+}
+
+.bs-popover-auto {
+  &[data-popper-placement^="top"] {
+    @extend .bs-popover-top;
+  }
+  &[data-popper-placement^="right"] {
+    @extend .bs-popover-end;
+  }
+  &[data-popper-placement^="bottom"] {
+    @extend .bs-popover-bottom;
+  }
+  &[data-popper-placement^="left"] {
+    @extend .bs-popover-start;
+  }
+}
+
+// Offset the popover to account for the popover arrow
+.popover-header {
+  color: $popover-header-color;
+  position: absolute;
+  font-size: 24px;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  background: none;
+  padding: 0;
+  z-index: 10;
+  @include media-breakpoint-up(small-tablet) {
+    display: none;
+  }
+  &:empty {
+    display: none;
+  }
+}
+
+.popover-body {
+  padding: 20px;
+  color: $popover-body-color;
+  .ref-content {
+    h2 {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    p:last-child {
+      margin: 0;
+    }
+    ul {
+      padding: 0;
+      list-style-position: inside;
+      margin: 10px 0 0;
+    }
+    a {
+      color: $danger;
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

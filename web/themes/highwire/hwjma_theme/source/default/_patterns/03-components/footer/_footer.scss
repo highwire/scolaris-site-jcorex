@@ -1,0 +1,124 @@
+// Footer
+$component: ".footer";
+#{$component} {
+    background-color: $secondary-light;
+    padding-top: 3.125rem;
+    color: $secondary-dark;
+    border: none;
+    .social-share {
+        font-size: 0;
+        margin-top: 2.438rem;
+        a {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            color: $secondary-dark;
+            border: 1px solid $secondary-dark;
+            transition: transform 0.3s ease-out 0s;
+            -o-transition: transform 0.3s ease-out 0s;
+            -moz-transition: transform 0.3s ease-out 0s;
+            -webkit-transition: transform 0.3s ease-out 0s;
+            svg {
+                position: relative;
+                z-index: 1;
+                path,
+                polygon {
+                    fill: $secondary-dark;
+                }
+            }
+            &:hover,
+            &:focus {
+                background-color: $secondary-dark;
+                svg {
+                    path,
+                    polygon {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+    h5, h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 26px;
+        letter-spacing: 1px;
+        visibility: visible;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        list-style: inside disc;
+        line-height: 28px;
+        li {
+            a {
+                color: $secondary-dark;
+                display: inline-block;
+                &:hover,
+                &:focus {
+                    color: $danger;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 1.25rem 0;
+        background-color: $primary;
+        &__copyright {
+            display: block;            
+            color: $secondary;
+            font-size: 14px;
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    }
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-col {
+        width: 100%;
+        @include media-breakpoint-up(medium-tablet) {
+            width: 60%;
+            padding-left: 40px;
+            &:first-child {
+                width: 40%;
+                padding-left: 0;
+            }
+        }
+        @include media-breakpoint-up(large-tablet) {
+            width: 50%;
+            &:first-child {
+                width: 50%;
+            }
+            &:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-menu {
+        display: inline-flex;
+        width: 100%;
+        @include media-breakpoint-up(small-tablet) {
+            width: 50%;
+        }
+        @include media-breakpoint-up(medium-tablet) {
+            width: auto;
+        }
+        @include media-breakpoint-down(large-tablet) {
+            margin-top: 20px;
+        }
+        flex-direction: column;
+    }
+}

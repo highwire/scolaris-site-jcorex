@@ -1,0 +1,72 @@
+uuid: 615a9cb8-890b-4a48-a39d-6cb834b10068
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.resource_item
+    - field.field.node.reference_info.field_reference_abbreviation
+    - field.field.node.reference_info.field_reference_note
+    - field.field.node.reference_info.field_reference_text
+    - field.field.node.reference_info.field_reference_url
+    - field.field.node.reference_info.field_subscription_information
+    - node.type.reference_info
+  module:
+    - link
+    - text
+    - user
+id: node.reference_info.resource_item
+targetEntityType: node
+bundle: reference_info
+mode: resource_item
+content:
+  field_reference_abbreviation:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_reference_note:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reference_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_reference_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subscription_information:
+    type: string
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

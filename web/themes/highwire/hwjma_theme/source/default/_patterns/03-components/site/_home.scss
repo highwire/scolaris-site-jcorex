@@ -1,0 +1,136 @@
+// Home
+$page: ".home";
+#{$page} {
+  padding-top: 2.5rem !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
+  .contextual-region {
+    position: static;
+  }
+  .slick-arrow {
+    top: -23px;
+    &.slick-prev {
+      left: auto;
+      right: 65px;
+    }  
+    &.slick-next {
+      right: 25px;
+    }
+  }
+  &-top-block {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &-body {
+      @include media-breakpoint-up(large-tablet) {
+        padding-right: 20px;
+      }
+      @include media-breakpoint-up(desktop) {
+        padding-right: 40px;
+      }
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    &-link {
+      display: block;
+      margin-top: 30px;
+      @include media-breakpoint-up(large-tablet) {
+        text-align: right;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        @extend .btn;
+        @extend .btn-large-tablet;
+        @extend .btn-danger;
+        min-width: 180px;
+        &::after {
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+.path-frontpage {
+  .slick-slide {
+    margin: 0px 24px;
+    &.six {
+      margin: 0;
+    }
+  }
+  #block-mainpagecontent > .container {
+    max-width: inherit;
+    padding: 0;
+  }
+}
+.content-list-block {
+  padding: 3rem 0;
+  .product-list {
+    flex: 0 0 auto;
+    width: 25%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    @include media-breakpoint-down(medium-tablet) {
+      width: 33.33%;
+    }
+    @include media-breakpoint-down(small-tablet) {
+      width: 50%;
+    }
+  }
+  .card {
+    border: none;
+    &--image {
+      text-align: center;
+      img {
+        display: inline-block;
+        max-width: 100%;
+        height: 240px;
+      }
+    }
+    &-body {
+      padding: 0;
+      margin-top: 25px;
+      display: block;
+      text-align: center;
+      h5 {
+        margin-bottom: 10px;
+        a {
+          color: $danger;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+  } 
+}
+.path-frontpage {
+  .main-container {
+    padding: 0;
+    margin: 0;
+  }
+  .main-content-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+}
+
+//  banner start
+.banner {
+  &__button {
+    &:hover,
+    &:focus {
+      color: $danger;
+      text-decoration: none;
+    }
+    &:after {
+      content: "\e930";
+      color: $danger;
+    }
+  }
+}

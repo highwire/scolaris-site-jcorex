@@ -1,0 +1,21 @@
+uuid: dbe1ebc0-b327-4e49-896c-e57085d6ac51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.authors_full_name
+    - node.type.item_standard_chapter
+  module:
+    - text
+id: node.item_standard_chapter.authors_full_name
+field_name: authors_full_name
+entity_type: node
+bundle: item_standard_chapter
+label: authors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

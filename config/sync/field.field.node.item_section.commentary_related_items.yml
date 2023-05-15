@@ -1,0 +1,21 @@
+uuid: 9000a772-fda5-4976-9eae-a6e8d323649e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.commentary_related_items
+    - node.type.item_section
+id: node.item_section.commentary_related_items
+field_name: commentary_related_items
+entity_type: node
+bundle: item_section
+label: commentary-related-items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

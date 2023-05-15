@@ -1,0 +1,24 @@
+uuid: f9bdc4e1-f43d-4311-bd6a-422cda9e81ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_table_of_content_standard
+    - node.type.item_standard
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: table_of_content_standard
+id: node.item_standard.hwmd_table_of_content_standard
+field_name: hwmd_table_of_content_standard
+entity_type: node
+bundle: item_standard
+label: 'HighWire Markup Display - Table of Content - Standard'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

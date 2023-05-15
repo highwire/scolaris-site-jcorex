@@ -1,0 +1,21 @@
+uuid: 36ac46f1-3e42-4af3-94f9-922ebf9583fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_id
+    - node.type.itemset
+  module:
+    - text
+id: node.itemset.standard_id
+field_name: standard_id
+entity_type: node
+bundle: itemset
+label: standard-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

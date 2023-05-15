@@ -1,0 +1,37 @@
+uuid: 933c1961-8b89-48cc-8cdb-d8bd1726f394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.keywords
+    - node.type.item_front_matter
+  module:
+    - double_field
+id: node.item_front_matter.keywords
+field_name: keywords
+entity_type: node
+bundle: item_front_matter
+label: keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    min: null
+    max: null
+    list: false
+    allowed_values: {  }
+    required: true
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

@@ -1,0 +1,30 @@
+uuid: 017befb8-0505-4226-bc53-57db8569ac08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource_link.field_link_desc
+    - node.type.resource_link
+  module:
+    - user
+id: node.resource_link.default
+targetEntityType: node
+bundle: resource_link
+mode: default
+content:
+  field_link_desc:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

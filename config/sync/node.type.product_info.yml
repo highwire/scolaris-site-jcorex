@@ -1,0 +1,18 @@
+uuid: 5ba3c9e5-3a6c-46d8-bb86-e8be61c8afea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Product Info'
+type: product_info
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

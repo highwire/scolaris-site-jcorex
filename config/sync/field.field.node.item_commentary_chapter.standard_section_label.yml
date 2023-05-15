@@ -1,0 +1,21 @@
+uuid: 33552521-413e-43af-97dc-c25194d1d545
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_section_label
+    - node.type.item_commentary_chapter
+  module:
+    - text
+id: node.item_commentary_chapter.standard_section_label
+field_name: standard_section_label
+entity_type: node
+bundle: item_commentary_chapter
+label: standard-section-label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

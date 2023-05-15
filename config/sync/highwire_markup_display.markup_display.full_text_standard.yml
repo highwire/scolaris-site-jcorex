@@ -1,0 +1,23 @@
+uuid: 2d4a3c51-8594-4f02-9ff7-0b97b284dead
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_standard
+label: 'Full text (Standard)'
+configurations:
+  -
+    markup_profile: full_text
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+    access_rule: ''
+markup_field_enabled: true
+markup_field_content_types:
+  - item_back_matter
+  - item_commentary_chapter
+  - item_commentary_section
+  - item_front_matter
+  - item_standard_chapter
+  - item_standard_section
+log: false
+render_placeholder: false

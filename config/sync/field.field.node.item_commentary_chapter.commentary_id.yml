@@ -1,0 +1,21 @@
+uuid: 06288964-8f09-4977-a4b2-c052c3b44f6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.commentary_id
+    - node.type.item_commentary_chapter
+  module:
+    - text
+id: node.item_commentary_chapter.commentary_id
+field_name: commentary_id
+entity_type: node
+bundle: item_commentary_chapter
+label: commentary-id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

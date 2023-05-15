@@ -1,0 +1,21 @@
+uuid: 398fbfc1-6014-4716-a1d1-8319f09b66fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_chapter_type
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.standard_chapter_type
+field_name: standard_chapter_type
+entity_type: node
+bundle: item_commentary_section
+label: standard-chapter-type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

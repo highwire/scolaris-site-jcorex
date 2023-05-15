@@ -1,0 +1,21 @@
+uuid: f3af6f19-26de-4553-bec0-169cf2f7d9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.editors_full_name
+    - node.type.item_ref
+  module:
+    - text
+id: node.item_ref.editors_full_name
+field_name: editors_full_name
+entity_type: node
+bundle: item_ref
+label: editors-full-name
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

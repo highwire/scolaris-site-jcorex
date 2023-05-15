@@ -1,0 +1,21 @@
+uuid: 85f91133-e734-4a9f-b119-cd380e26a616
+langcode: en
+status: true
+dependencies: {  }
+id: full_text_search_index
+label: 'Full text(Search Index)'
+configurations:
+  -
+    markup_profile: full_text_search_index
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
+    access_rule: ''
+markup_field_enabled: true
+markup_field_content_types:
+  - item_commentary_chapter
+  - item_commentary_section
+  - item_standard_chapter
+  - item_standard_section
+log: false
+render_placeholder: false

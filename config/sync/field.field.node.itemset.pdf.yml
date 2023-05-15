@@ -1,0 +1,27 @@
+uuid: dd7280f4-7d04-4ed4-9bba-eba43aea2fdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.pdf
+    - node.type.itemset
+  module:
+    - file
+id: node.itemset.pdf
+field_name: pdf
+entity_type: node
+bundle: itemset
+label: pdf
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  file_extensions: txt
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler_settings: {  }
+field_type: file

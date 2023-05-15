@@ -1,0 +1,21 @@
+uuid: f5d0aa4f-c845-4471-a508-ff090537b6d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_chapter_stanard_url
+    - node.type.item_commentary_chapter
+id: node.item_commentary_chapter.first_chapter_stanard_url
+field_name: first_chapter_stanard_url
+entity_type: node
+bundle: item_commentary_chapter
+label: first-chapter-stanard-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: 82d7d020-5233-4f30-ba3e-f794991e81c5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6892137e-1f03-4355-b223-620bfcd7b7e2'
+  module:
+    - block_content
+  theme:
+    - tms
+id: headerleftsitebranding
+theme: tms
+region: header_branding_1
+weight: 0
+provider: null
+plugin: 'block_content:6892137e-1f03-4355-b223-620bfcd7b7e2'
+settings:
+  id: 'block_content:6892137e-1f03-4355-b223-620bfcd7b7e2'
+  label: 'Header left site branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 07db2747-17a1-4cab-a030-6c3f428245ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.hwmd_full_text_standard
+    - node.type.item_standard_section
+  module:
+    - highwire_markup_display
+third_party_settings:
+  highwire_markup_display:
+    markup_display_id: full_text_standard
+id: node.item_standard_section.hwmd_full_text_standard
+field_name: hwmd_full_text_standard
+entity_type: node
+bundle: item_standard_section
+label: 'HighWire Markup Display - Full text (Standard)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: HWMarkupDisplay

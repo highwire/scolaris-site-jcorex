@@ -1,0 +1,21 @@
+uuid: a83d4989-3d71-4560-bf2c-0137f54eb28a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.commentary_url
+    - node.type.item_commentary_section
+id: node.item_commentary_section.commentary_url
+field_name: commentary_url
+entity_type: node
+bundle: item_commentary_section
+label: commentary-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

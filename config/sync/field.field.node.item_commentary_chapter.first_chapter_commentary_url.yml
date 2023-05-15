@@ -1,0 +1,21 @@
+uuid: b7d72267-be60-41f9-b2f7-5c476463ab16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.first_chapter_commentary_url
+    - node.type.item_commentary_chapter
+id: node.item_commentary_chapter.first_chapter_commentary_url
+field_name: first_chapter_commentary_url
+entity_type: node
+bundle: item_commentary_chapter
+label: first-chapter-commentary-url
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

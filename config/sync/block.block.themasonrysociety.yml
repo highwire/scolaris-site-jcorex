@@ -1,0 +1,25 @@
+uuid: 43f85ff9-da29-4057-8608-66e91e3fe64b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.the-masonry-society
+  module:
+    - system
+  theme:
+    - tms
+id: themasonrysociety
+theme: tms
+region: footer_5
+weight: -2
+provider: null
+plugin: 'system_menu_block:the-masonry-society'
+settings:
+  id: 'system_menu_block:the-masonry-society'
+  label: 'The Masonry Society'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

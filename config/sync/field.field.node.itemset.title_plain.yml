@@ -1,0 +1,21 @@
+uuid: 472527e5-0375-47fc-9226-a26ffdda45cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.title_plain
+    - node.type.itemset
+  module:
+    - text
+id: node.itemset.title_plain
+field_name: title_plain
+entity_type: node
+bundle: itemset
+label: title-plain
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

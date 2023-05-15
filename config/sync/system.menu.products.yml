@@ -1,0 +1,8 @@
+uuid: bce10163-c529-487e-81d5-69bf63701e80
+langcode: en
+status: true
+dependencies: {  }
+id: products
+label: Products
+description: ''
+locked: false

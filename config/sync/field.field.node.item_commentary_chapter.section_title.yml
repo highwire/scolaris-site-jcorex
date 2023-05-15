@@ -1,0 +1,21 @@
+uuid: 0b2eaa0e-8140-4d2a-acc1-730c185e308c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.section_title
+    - node.type.item_commentary_chapter
+  module:
+    - text
+id: node.item_commentary_chapter.section_title
+field_name: section_title
+entity_type: node
+bundle: item_commentary_chapter
+label: section-title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 782ee89b-bf8b-41fa-9845-08548b527a6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.isbn_print
+    - node.type.item_commentary_section
+  module:
+    - text
+id: node.item_commentary_section.isbn_print
+field_name: isbn_print
+entity_type: node
+bundle: item_commentary_section
+label: isbn-print
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

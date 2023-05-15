@@ -1,0 +1,21 @@
+uuid: d92fa2a7-1167-47a3-baa6-e8d7da68a10f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.standard_related_items
+    - node.type.item_commentary_chapter
+id: node.item_commentary_chapter.standard_related_items
+field_name: standard_related_items
+entity_type: node
+bundle: item_commentary_chapter
+label: standard-related-items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

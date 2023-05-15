@@ -1,0 +1,21 @@
+uuid: abe66634-17d5-4179-9d48-a1791287e0ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.description
+    - node.type.item_standard
+  module:
+    - text
+id: node.item_standard.description
+field_name: description
+entity_type: node
+bundle: item_standard
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

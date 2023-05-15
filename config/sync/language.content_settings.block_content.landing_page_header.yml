@@ -1,0 +1,11 @@
+uuid: 222624da-4665-4fd0-96fc-7d9aa44e3c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.landing_page_header
+id: block_content.landing_page_header
+target_entity_type_id: block_content
+target_bundle: landing_page_header
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 69a79e8c-2eb5-4731-b6b7-8c52b9f1ee4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.children
+    - node.type.item_commentary_section
+id: node.item_commentary_section.children
+field_name: children
+entity_type: node
+bundle: item_commentary_section
+label: children
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference
