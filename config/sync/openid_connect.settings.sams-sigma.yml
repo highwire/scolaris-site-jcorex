@@ -1,13 +1,9 @@
-enabled: sams-sigma
+enabled: false
 settings:
-  redirect_url: ''
-  client_id: ''
-  client_secret: ''
-  sigma_base_url: ''
-  sigma_enable_shibboleth: 1
-  sigma_sp_base_url: ''
-  sm_wrapper:
-    skip_social_url: ''
+  client_id: null
+  client_secret: null
+  sams_sigma_base_url: null
+  sigma_sp_base_url: null
 dependencies:
   module:
     - openid_connect_sams_sigma

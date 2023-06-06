@@ -1,4 +1,4 @@
-uuid: f3aa8d78-4d31-49b8-acb7-fb30dc7fedbf
+uuid: c95354a8-0d5b-43ea-a43f-ef991d2c9de1
 langcode: en
 status: true
 dependencies: {  }
@@ -13,9 +13,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'opt-in or out of google analytics tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use search_api_autocomplete for search'
   - 'use text format basic_html'

@@ -1,4 +1,4 @@
-uuid: 2cb5f7fe-fd42-45fb-bc28-e95ba4b97a12
+uuid: 15be1a1c-1433-48d9-a0ec-97fb094752cb
 langcode: en
 status: true
 dependencies: {  }
@@ -13,5 +13,4 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
-  - 'use search_api_autocomplete for search'
   - 'use text format restricted_html'

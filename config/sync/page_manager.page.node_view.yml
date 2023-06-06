@@ -1,4 +1,4 @@
-uuid: 5015cdb1-7e3b-47d4-8a51-2c0286e63bba
+uuid: 61df94ef-ec9d-405f-9410-d4f83c8f5354
 langcode: en
 status: true
 dependencies: {  }
@@ -11,4 +11,8 @@ use_admin_theme: false
 path: '/node/{node}'
 access_logic: and
 access_conditions: {  }
-parameters: {  }
+parameters:
+  node:
+    machine_name: node
+    type: 'entity:node'
+    label: Node

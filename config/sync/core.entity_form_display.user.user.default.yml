@@ -1,4 +1,4 @@
-uuid: 55b3bd7c-4039-4c36-9f29-a7d988ccc190
+uuid: 4af2ba7f-ba9b-4ea0-b8f4-84bd2eda6d14
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - field.field.user.user.field_sigma_organization_name
     - field.field.user.user.field_sigma_user_type
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 _core:
-  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+  default_config_hash: P7sBtbDqpN2_NQWAghPlwwBgUiRdt08Y0bv6bMTjERs
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -22,23 +20,30 @@ mode: default
 content:
   account:
     weight: -10
+    settings: {  }
+    third_party_settings: {  }
     region: content
   contact:
     weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hw_preferences_captured:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   language:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
     region: content
   timezone:
     weight: 6
-    region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
-    weight: -1
     region: content
 hidden:
   field_hw_preferences_captured: true
@@ -46,4 +51,4 @@ hidden:
   field_sigma_license_data: true
   field_sigma_organization_name: true
   field_sigma_user_type: true
-  langcode: true
+  user_picture: true

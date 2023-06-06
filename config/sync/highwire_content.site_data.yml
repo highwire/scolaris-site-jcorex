@@ -1,9 +1,1 @@
-highwire_content_site_data:
-  tmsworks:
-    id: tmsworks
-    publisher-id: tms
-    status: development
-    type: scolaris
-    name: 'The Masonry Society'
-    abbrev: {  }
-    url: {  }
+highwire_content_site_data: {  }

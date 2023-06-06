@@ -1,4 +1,4 @@
-uuid: 1cdd8a6b-9a7b-41ce-9a7e-b91cfab22c6e
+uuid: 95cdaa9f-e1ec-41a7-9ebd-84b6879bd5b0
 langcode: en
 status: true
 dependencies:
@@ -22,11 +22,6 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
-  addtoany:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   body:
     type: text_default
     weight: 0
@@ -65,5 +60,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  langcode: true
+hidden: {  }
