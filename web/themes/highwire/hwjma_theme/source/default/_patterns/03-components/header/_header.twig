@@ -12,16 +12,15 @@
 			</svg>
 		</button>
 	</div>
-</header>
-
-<nav class="navigation">
-	<div class="container">				
-		<div class="navigation__collapse" id="navbarHeader">
-			{{ header_nav }}
-			{{ header_auth }}
+	<nav class="navigation">
+		<div class="container">				
+			<div class="navigation__collapse" id="navbarHeader">
+				{{ header_nav }}
+				{{ header_auth }}
+			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
+</header>
 
 {% if show_banner|default(false) %}
 	{% include "@components/banner/_banner.twig" %}	
@@ -30,3 +29,4 @@
 {% if show_search|default(false) %}
     {{search_form}}
 {% endif %}
+
