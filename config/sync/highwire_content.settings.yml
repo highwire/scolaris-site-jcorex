@@ -2,6 +2,7 @@ highwire_content_configuration:
   content:
     scolaris-journal:
       - hwjma
+      - hwcmaj
 highwire_content_content_sync_enabled: 0
 highwire_content_content_environment: development
 highwire_content_content_updates_enabled: 0
@@ -9,8 +10,6 @@ highwire_content_content_type_labels: {  }
 highwire_content_content_type_labels_plural: {  }
 highwire_content_content_type_groupings: {  }
 highwire_corpus_page_redirect:
-  item-bits-bpsworks:
-    bpsworks: ''
   scolaris-journal:
     hwjma: ''
 highwire_content_type_policy_field_mapping:
