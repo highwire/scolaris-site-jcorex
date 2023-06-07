@@ -1,4 +1,4 @@
-uuid: f91407ea-014f-4b3b-b0f1-d4c437378454
+uuid: a6a39563-fd44-4159-8da4-69231dd969b5
 langcode: en
 status: true
 dependencies:
@@ -36,5 +36,4 @@ hidden:
   field_sigma_license_data: true
   field_sigma_organization_name: true
   field_sigma_user_type: true
-  langcode: true
   member_for: true

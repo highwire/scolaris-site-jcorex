@@ -1,4884 +1,2431 @@
 highwire_content_configuration:
   content:
-    item-tms:
-      - tmsworks
+    scolaris-journal:
+      - hwjma
+      - hwcmaj
 highwire_content_content_sync_enabled: 0
 highwire_content_content_environment: development
 highwire_content_content_updates_enabled: 0
-highwire_content_content_type_labels:
-  item_chapter: Chapter
-  item_chapter_commentary: 'Commentary Chapter'
-  item_chapter_standard: 'Standard Chapter'
-  item_commentary_chapter: 'Commentary chapter'
-  item_section: Section
-  item_section_commentary: 'Commentary Section'
-  item_section_standard: 'Standard Section'
-  item_standard: Standard
-  item_standard_chapter: 'Standard chapter'
+highwire_content_content_type_labels: {  }
 highwire_content_content_type_labels_plural: {  }
 highwire_content_content_type_groupings: {  }
-highwire_content_type_policy_field_mapping:
-  item_back_matter:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_commentary_chapter:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_commentary_section:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_cover:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_figure:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_front_matter:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_part:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_ref:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_reference:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_reference_section:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_standard:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_back_matter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_back_matter_standard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_front_matter_standard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_standard_chapter:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_standard_section:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  item_table:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-  itemset:
-    -
-      id: archived
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: atom_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: authors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: binary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: children
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: contributors_xml
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: counts
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: cover_image
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_release
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_atom_updated
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: date_ppub
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: date_print_publication
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: description
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: disclaimer
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: doi
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: edition_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: editors_full_name
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_commentary_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_chapter_stanard_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: first_part_url
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: fpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: instructor_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_ebook_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: isbn_print_compact
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: item_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: keywords
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: lpage
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: mime_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_chapter
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: parent_standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: pdf
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: permissions
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: publisher
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: registered_test
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: related_objects
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: section_title
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_chapter_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_has_abstract
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_body
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_has_commentary
-      drupal-type: boolean
-      freebird-type: boolean
-      policy: item-tms
-    -
-      id: standard_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_related_items
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_label
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: standard_section_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: subject_groups
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: subtitle
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supp_content_type
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: supplementary_material
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: taxonomy_terms
-      drupal-type: structure
-      freebird-type: structure
-      policy: item-tms
-    -
-      id: title_plain
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-    -
-      id: type_id
-      drupal-type: text
-      freebird-type: text
-      policy: item-tms
-highwire_content_type_policy_mapping:
-  item_back_matter:
-    - item-tms
-  item_commentary_chapter:
-    - item-tms
-  item_commentary_section:
-    - item-tms
-  item_cover:
-    - item-tms
-  item_figure:
-    - item-tms
-  item_front_matter:
-    - item-tms
-  item_part:
-    - item-tms
-  item_ref:
-    - item-tms
-  item_reference:
-    - item-tms
-  item_reference_section:
-    - item-tms
-  item_standard:
-    - item-tms
-  item_standard_chapter:
-    - item-tms
-  item_standard_section:
-    - item-tms
-  item_table:
-    - item-tms
-  itemset:
-    - item-tms
 highwire_corpus_page_redirect:
-  item-tms:
-    tmsworks: ''
+  scolaris-journal:
+    hwjma: ''
+highwire_content_type_policy_field_mapping:
+  journal:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_accepted
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_received
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_revision
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: final_published
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_article:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_accepted
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_received
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_revision
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: final_published
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_fragment:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_accepted
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_received
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_revision
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: final_published
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  journal_issue:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_accepted
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_received
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_revision
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: final_published
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+  relationship:
+    -
+      id: adjuncts
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_open_access
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: article_series_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: article_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: atom_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: authors_full_name
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: chapter_type
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: children
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: col_url
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: contributors
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: cover_date
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: custom_meta
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_accepted
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epreprint
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_original
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_version
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_received
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_released
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: date_revision
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: date_epub_or_ppub
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: doi
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: elocation_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: enclosures
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: final_published
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: fpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: georef_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: has_abstract
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_early_release
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_figures_or_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_full_text_pdf
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_links
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_ref_stub
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_source
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_tables
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: has_videos
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_is_open
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_page_range
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_supplemental
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: issue_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: issue_toc
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_abbrv_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_current_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_eissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_first_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_pissn_compact
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: journal_title
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: keywords
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: lpage
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: member_network
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: next_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: overline
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: page_count
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_issue
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_journal
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: parent_volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pdf_extract_img
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pisa_version
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: prev_atom
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: publisher_unique_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: pubmed_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: related
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: secondary
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: sibling_order
+      drupal-type: integer
+      freebird-type: integer
+      policy: scolaris-journal
+    -
+      id: slug
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtitle
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: subtype
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: summary
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: taxonomy_terms
+      drupal-type: structure
+      freebird-type: structure
+      policy: scolaris-journal
+    -
+      id: title_plain
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: title_short
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_cover_source_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_full_text_stamped_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_large_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_medium_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_small_image
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: variant_table_of_contents_pdf
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: version_current
+      drupal-type: boolean
+      freebird-type: boolean
+      policy: scolaris-journal
+    -
+      id: video_id
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+    -
+      id: volume
+      drupal-type: text
+      freebird-type: text
+      policy: scolaris-journal
+highwire_content_type_policy_mapping:
+  journal:
+    - scolaris-journal
+  journal_article:
+    - scolaris-journal
+  journal_fragment:
+    - scolaris-journal
+  journal_issue:
+    - scolaris-journal
+  relationship:
+    - scolaris-journal

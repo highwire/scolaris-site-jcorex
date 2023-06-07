@@ -1,8 +1,0 @@
-uuid: 85ad2583-d1a0-494e-9425-8d6bea8e22db
-langcode: en
-status: true
-dependencies: {  }
-id: company-info
-label: 'Company info'
-description: ''
-locked: false

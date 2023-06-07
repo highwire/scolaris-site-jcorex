@@ -1,46 +1,10 @@
-context: tmsworks
+context: ''
 saved_search_api_base_path: ''
 alert_type_config: null
-markers_content_type_filters:
-  item_chapter: 1
-  item_chapter_commentary: 1
-  item_chapter_standard: 1
-  item_commentary_chapter: 1
-  item_section: 1
-  item_section_commentary: 1
-  item_section_standard: 1
-  item_standard: 1
-  item_standard_chapter: 1
-markers_admin_citations_view_mode:
-  item_chapter: search_result
-  item_chapter_commentary: search_result
-  item_chapter_standard: search_result
-  item_commentary_chapter: search_result
-  item_section: search_result
-  item_section_commentary: search_result
-  item_section_standard: search_result
-  item_standard: search_result
-  item_standard_chapter: search_result
+markers_content_type_filters: {  }
+markers_admin_citations_view_mode: {  }
 profile_and_privacy_form_class: ''
 profile_and_privacy_pop_welcome_message: 'You are registered for a personal account.'
-tags_admin_citations_view_mode:
-  item_chapter: search_result
-  item_chapter_commentary: search_result
-  item_chapter_standard: search_result
-  item_commentary_chapter: search_result
-  item_section: search_result
-  item_section_commentary: search_result
-  item_section_standard: search_result
-  item_standard: search_result
-  item_standard_chapter: search_result
+tags_admin_citations_view_mode: {  }
 _core:
   default_config_hash: Pxth7sNsS5mshjiXLFyUNe2Ky1kkQd6BqF23xLmp9rI
-highwire_pref_capture_popup:
-  popup: 0
-reports_enabled:
-  alerts: 0
-  captures: 0
-  preferences: 0
-remove_alert_tab_title: 'Saved searches'
-default_empty_alert_message: ''
-empty_alert_message: ''

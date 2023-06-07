@@ -1,8 +1,9 @@
-uuid: 02e92cc6-3797-4171-9b13-32e4183bd63c
+uuid: 12bb70df-6729-4ac1-bf39-19ef1242ee64
 langcode: en
 status: true
 dependencies:
   module:
+    - openid_connect_sams_sigma
     - user
 _core:
   default_config_hash: xVprYnSG33i4sNSeQQY0Kzbr8HDOmt1BLZIb-_EiDic
@@ -14,7 +15,7 @@ settings:
   max_length: 255
   is_ascii: false
   case_sensitive: false
-module: core
+module: openid_connect_sams_sigma
 locked: false
 cardinality: 1
 translatable: true
