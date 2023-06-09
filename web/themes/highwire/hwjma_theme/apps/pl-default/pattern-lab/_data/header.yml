@@ -9,9 +9,9 @@ site_logo:
     height: 86
 publisher_logo:
   image:
-    src: "../../../assets/images/hwjma-explore.svg"
-    title: HWJMA Explore Logo
-    alt: HWJMA Explore Logo
+    src: "../../../assets/images/bps-explore.svg"
+    title: BPS Explore Logo
+    alt: BPS Explore Logo
     class: brand__logo
     width: 286
     height: 86
@@ -33,7 +33,7 @@ navigation_dropdown:
         value: Behavioral Sciences
       - href: #
         value: Health Sciences
-    arrow: 'menu_arrow'
+    arrow: 'menu_arrow'    
 - dropdown:
     id: content-dropdown
     modifier_class: navigation__item__dropdown
@@ -47,7 +47,7 @@ navigation_dropdown:
         value: Journals
       - href: #
         value: Reference
-    arrow: 'menu_arrow'
+    arrow: 'menu_arrow'    
 - dropdown:
     id: information-dropdown
     modifier_class: navigation__item__dropdown
@@ -67,24 +67,24 @@ navigation_dropdown:
         value: Societies
       - href: #
         value: Advertisers
-    arrow: 'menu_arrow'
+    arrow: 'menu_arrow'    
 left_nav:
 - button:
     href: "#"
     title: About
     text: About
-    class: nav-link
+    class: nav-link 
 - button:
     href: "#"
     title: Blog
     text: Blog
-    class: nav-link
+    class: nav-link 
 right_nav:
 - button:
     href: "#"
     title: Account
     text: Account
-    class: user__icon
+    class: user__icon     
 - button:
     href: "#"
     title: Cart
@@ -105,6 +105,6 @@ search_form:
     type: submit
     style: search
     text: Search
-
+   
 
 
