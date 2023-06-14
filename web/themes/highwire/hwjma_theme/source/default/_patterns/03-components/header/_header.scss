@@ -14,11 +14,8 @@ $component: ".header";
       margin: 0;
     }
     .brand__logo {
-      width: 342px;
+      width: 286px;
       height: auto;
-      @include media-breakpoint-down(medium-tablet) {
-        width: 240px;
-      }
       @include media-breakpoint-down(small-tablet) {
         width: 196px;
       }

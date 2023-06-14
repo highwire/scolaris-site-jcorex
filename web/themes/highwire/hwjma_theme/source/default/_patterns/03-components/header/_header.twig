@@ -26,7 +26,10 @@
 	{% include "@components/banner/_banner.twig" %}	
 {% endif %}
 
-{% if show_search|default(false) %}
-    {{search_form}}
+{% if show_carousal|default(false) %}
+	{% include "@components/carousal/_carousal.twig" %}	
 {% endif %}
 
+{% if show_search|default(false) %}
+  {{ search_form }}
+{% endif %}
