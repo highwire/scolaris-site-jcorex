@@ -1,0 +1,39 @@
+<?php
+
+
+
+function hwjma_basic_config_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['footer_facebook'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Footer Facebook'),
+    '#default_value' => theme_get_setting('footer_facebook'),
+    '#description'   => t("Place this url in the widget spot on your site."),
+  );
+
+  $form['footer_twitter'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Footer Twitter'),
+    '#default_value' => theme_get_setting('footer_twitter'),
+    '#description'   => t("Place this url in the widget spot on your site."),
+  );
+
+  $form['footer_youtube'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Footer Youtube'),
+    '#default_value' => theme_get_setting('footer_youtube'),
+    '#description'   => t("Place this url in the widget spot on your site."),
+  );
+
+  $form['footer_linkedin'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Footer Linkedin'),
+    '#default_value' => theme_get_setting('footer_linkedin'),
+    '#description'   => t("Place this url in the widget spot on your site."),
+  );
+
+}
