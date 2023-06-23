@@ -40,25 +40,25 @@ class SettingsForm extends ConfigFormBase {
     $config = $this->config('hwjma_basic_config.settings');
 
     $form['footer_facebook'] = array(
-      '#type' => 'text',
+      '#type' => 'textfield',
       '#title' => $this->t('Footer Facebook'),
       '#default_value' => $config->get('footer_facebook'),
     );
 
     $form['footer_twitter'] = array(
-      '#type' => 'text',
+      '#type' => 'textfield',
       '#title' => $this->t('Footer Twitter'),
       '#default_value' => $config->get('footer_twitter'),
     );
 
     $form['footer_youtube'] = array(
-      '#type' => 'text',
+      '#type' => 'textfield',
       '#title' => $this->t('Footer Youtube'),
       '#default_value' => $config->get('footer_youtube'),
     );
 
     $form['footer_linkedin'] = array(
-      '#type' => 'text',
+      '#type' => 'textfield',
       '#title' => $this->t('Footer Linkedin'),
       '#default_value' => $config->get('footer_linkedin'),
     );
