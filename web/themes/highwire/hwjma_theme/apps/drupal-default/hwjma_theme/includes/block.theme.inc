@@ -6,7 +6,7 @@ use Drupal\Core\Template\Attribute;
 /**
  * Implements hook_preprocess_THEME().
  */
-function hwjma_preprocess_block__block_image(&$variables) {
+function hwjma_preprocess_block__image_block(&$variables) {
   if (empty($variables['content']['#block_content']) || empty($variables['content']['field_image'][0])) {
     return;
   }
