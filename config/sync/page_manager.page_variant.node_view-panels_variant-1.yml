@@ -1,0 +1,112 @@
+uuid: 54043712-1526-4ffa-bd86-9d624e6ae504
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+  module:
+    - ctools
+    - panels
+id: node_view-panels_variant-1
+label: Article
+variant: panels_variant
+variant_settings:
+  blocks:
+    cdfed180-ace1-4911-8443-79a331d46177:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: content_details
+      region: top
+      weight: 0
+      uuid: cdfed180-ace1-4911-8443-79a331d46177
+      context_mapping:
+        entity: node
+    8aebb1b3-a3f7-46fe-9a99-0c47375e5a33:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: full
+      region: bottom_left
+      weight: 0
+      uuid: 8aebb1b3-a3f7-46fe-9a99-0c47375e5a33
+      context_mapping:
+        entity: node
+    60499b3b-a317-4a2a-bc0e-0795495b43f8:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: focus_view
+      region: bottom_left
+      weight: 0
+      uuid: 60499b3b-a317-4a2a-bc0e-0795495b43f8
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: 913cdc11-eec4-463b-af89-51b8f40e5a98
+  label: null
+  weight: 0
+  layout: bs_2col_bricked
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 0
+      attributes: 'class| journal-page'
+    regions:
+      top:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 0
+        attributes: ''
+      top_left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 0
+        attributes: ''
+      top_right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 0
+        attributes: ''
+      middle:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+      bottom_left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 0
+        attributes: 'class|col-12 col-large-tablet-9'
+      bottom_right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: 'class|col-12 col-large-tablet-3 article__rightbar'
+      bottom:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-1
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
