@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.journal_article.article_type
     - field.field.node.journal_article.atom_type
     - field.field.node.journal_article.authors_full_name
+    - field.field.node.journal_article.authors_only_full_name
     - field.field.node.journal_article.chapter_type
     - field.field.node.journal_article.children
     - field.field.node.journal_article.col_url
@@ -48,6 +49,14 @@ dependencies:
     - field.field.node.journal_article.has_source
     - field.field.node.journal_article.has_tables
     - field.field.node.journal_article.has_videos
+    - field.field.node.journal_article.hwmd_abstract_article_
+    - field.field.node.journal_article.hwmd_abstract_article_toc_
+    - field.field.node.journal_article.hwmd_abstract_search
+    - field.field.node.journal_article.hwmd_abstract_search_index_
+    - field.field.node.journal_article.hwmd_collection_detail
+    - field.field.node.journal_article.hwmd_contributors_plain_
+    - field.field.node.journal_article.hwmd_figures_tables_article_
+    - field.field.node.journal_article.hwmd_long_article_
     - field.field.node.journal_article.issue
     - field.field.node.journal_article.issue_id
     - field.field.node.journal_article.issue_is_open
@@ -165,6 +174,14 @@ hidden:
   hw_alerts_sign_up: true
   hw_marker_sign_up: true
   hw_tag_sign_up: true
+  hwmd_abstract_article_: true
+  hwmd_abstract_article_toc_: true
+  hwmd_abstract_search: true
+  hwmd_abstract_search_index_: true
+  hwmd_collection_detail: true
+  hwmd_contributors_plain_: true
+  hwmd_figures_tables_article_: true
+  hwmd_long_article_: true
   issue: true
   issue_id: true
   issue_is_open: true
