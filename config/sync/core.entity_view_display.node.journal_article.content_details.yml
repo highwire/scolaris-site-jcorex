@@ -1,9 +1,9 @@
-uuid: 7b809707-fb1b-490f-99b4-fd99a55859ed
+uuid: 249d162d-2549-4795-80d9-479b6ad4236e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
+    - core.entity_view_mode.node.content_details
     - field.field.node.journal_article.adjuncts
     - field.field.node.journal_article.apath
     - field.field.node.journal_article.article_open_access
@@ -114,29 +114,119 @@ dependencies:
     - field.field.node.journal_article.volume
     - node.type.journal_article
   module:
+    - field_group
+    - file
+    - layout_builder
+    - text
     - user
-id: node.journal_article.rss
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_action_tools:
+      children:
+        - highwire_citations_download
+        - hw_marker_sign_up
+        - hw_alerts_sign_up
+        - hw_tag_sign_up
+        - ccc_permissions_link
+      parent_name: ''
+      weight: 7
+      format_type: highwire_html_list
+      format_settings:
+        id: ''
+        classes: ''
+        list_type: ul
+      label: 'Action Tools'
+      region: content
+id: node.journal_article.content_details
 targetEntityType: node
 bundle: journal_article
-mode: rss
+mode: content_details
 content:
-  links:
-    weight: 100
+  addtoany:
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
+  article_type:
+    type: text_default
+    weight: 1
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  authors_full_name:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  ccc_permissions_link:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  doi:
+    type: text_default
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  highwire_citations_download:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hw_alerts_sign_up:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hw_marker_sign_up:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  hw_tag_sign_up:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  parent_issue:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  variant_full_text_pdf:
+    type: file_default
+    weight: 4
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
 hidden:
-  addtoany: true
   adjuncts: true
   apath: true
   article_open_access: true
   article_series_title: true
-  article_type: true
   atom_type: true
-  authors_full_name: true
   authors_only_full_name: true
   chapter_type: true
   children: true
+  cited_by_block: true
   col_url: true
   contributors: true
   corpus: true
@@ -153,7 +243,6 @@ hidden:
   date_received: true
   date_released: true
   date_revision: true
-  doi: true
   early_release: true
   elocation_id: true
   enclosures: true
@@ -172,10 +261,8 @@ hidden:
   has_source: true
   has_tables: true
   has_videos: true
-  highwire_citations_download: true
-  hw_alerts_sign_up: true
-  hw_marker_sign_up: true
-  hw_tag_sign_up: true
+  hwjma_focus_view: true
+  hwjma_toc_pager: true
   hwmd_abstract_article_: true
   hwmd_abstract_article_toc_: true
   hwmd_abstract_search: true
@@ -210,12 +297,12 @@ hidden:
   overline: true
   page_count: true
   parent: true
-  parent_issue: true
   parent_journal: true
   parent_volume: true
   pdf_extract_img: true
   pisa_version: true
   prev_atom: true
+  prev_next_pager: true
   publisher_id: true
   publisher_unique_id: true
   pubmed_id: true
@@ -228,10 +315,10 @@ hidden:
   summary: true
   title_plain: true
   title_short: true
+  usage_stats_table_block: true
   variant_cover_image: true
   variant_cover_pdf: true
   variant_cover_source_image: true
-  variant_full_text_pdf: true
   variant_full_text_stamped_pdf: true
   variant_large_image: true
   variant_medium_image: true

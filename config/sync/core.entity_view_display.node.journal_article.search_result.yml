@@ -54,6 +54,7 @@ dependencies:
     - field.field.node.journal_article.hwmd_abstract_search
     - field.field.node.journal_article.hwmd_abstract_search_index_
     - field.field.node.journal_article.hwmd_collection_detail
+    - field.field.node.journal_article.hwmd_contributors
     - field.field.node.journal_article.hwmd_contributors_plain_
     - field.field.node.journal_article.hwmd_figures_tables_article_
     - field.field.node.journal_article.hwmd_long_article_
@@ -113,6 +114,8 @@ dependencies:
     - field.field.node.journal_article.volume
     - node.type.journal_article
   module:
+    - image
+    - text
     - user
 id: node.journal_article.search_result
 targetEntityType: node
@@ -120,11 +123,28 @@ bundle: journal_article
 mode: search_result
 content:
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
+  title_plain:
+    type: text_default
+    weight: 1
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  variant_cover_image:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
 hidden:
+  addtoany: true
   adjuncts: true
   apath: true
   article_open_access: true
@@ -179,6 +199,7 @@ hidden:
   hwmd_abstract_search: true
   hwmd_abstract_search_index_: true
   hwmd_collection_detail: true
+  hwmd_contributors: true
   hwmd_contributors_plain_: true
   hwmd_figures_tables_article_: true
   hwmd_long_article_: true
@@ -223,9 +244,7 @@ hidden:
   subtitle: true
   subtype: true
   summary: true
-  title_plain: true
   title_short: true
-  variant_cover_image: true
   variant_cover_pdf: true
   variant_cover_source_image: true
   variant_full_text_pdf: true

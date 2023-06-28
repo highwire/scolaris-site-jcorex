@@ -7,10 +7,16 @@ label: 'Long (Article)'
 configurations:
   -
     markup_profile: journal_full_text
+    access_rule: online
     field_group_settings:
       field_group_formatter: '0'
     weight: '1'
-    access_rule: ''
+  -
+    markup_profile: pdf_extract
+    access_rule: online
+    field_group_settings:
+      field_group_formatter: '0'
+    weight: '1'
 markup_field_enabled: true
 markup_field_content_types:
   - journal_article

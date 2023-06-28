@@ -1,9 +1,9 @@
-uuid: 7b809707-fb1b-490f-99b4-fd99a55859ed
+uuid: 1e9c8f73-396d-423c-b986-0f9a718ef037
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
+    - core.entity_view_mode.node.full_text_markup
     - field.field.node.journal_article.adjuncts
     - field.field.node.journal_article.apath
     - field.field.node.journal_article.article_open_access
@@ -114,17 +114,22 @@ dependencies:
     - field.field.node.journal_article.volume
     - node.type.journal_article
   module:
+    - layout_builder
     - user
-id: node.journal_article.rss
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.journal_article.full_text_markup
 targetEntityType: node
 bundle: journal_article
-mode: rss
+mode: full_text_markup
 content:
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
   adjuncts: true
