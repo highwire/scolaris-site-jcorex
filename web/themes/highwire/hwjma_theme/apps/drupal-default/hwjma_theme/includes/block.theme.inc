@@ -117,7 +117,7 @@ function hwjma_preprocess_block(&$variables) {
 			$nid = $node->id();
 
 			//Get node ids of pages that has reference of currunt journal page
-			$query = \Drupal::entityQuery('node')
+		/*	$query = \Drupal::entityQuery('node')
 				->condition('status', 1)
 				->condition('type', 'news_article')
 				->condition('field_news_article_content_ref', $nid, '=');
@@ -153,7 +153,7 @@ function hwjma_preprocess_block(&$variables) {
 						'src' => $media_url,
 					],
 				];
-			}
+			} */
 
 			//set theme variable and pass values
 			$variables['news_listing_items'] = $news_listing_items;
