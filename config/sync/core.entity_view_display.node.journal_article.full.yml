@@ -54,6 +54,7 @@ dependencies:
     - field.field.node.journal_article.hwmd_abstract_search
     - field.field.node.journal_article.hwmd_abstract_search_index_
     - field.field.node.journal_article.hwmd_collection_detail
+    - field.field.node.journal_article.hwmd_contributors
     - field.field.node.journal_article.hwmd_contributors_plain_
     - field.field.node.journal_article.hwmd_figures_tables_article_
     - field.field.node.journal_article.hwmd_long_article_
@@ -113,18 +114,147 @@ dependencies:
     - field.field.node.journal_article.volume
     - node.type.journal_article
   module:
+    - field_group
+    - highwire_markup_display
     - user
+third_party_settings:
+  field_group:
+    group_outer:
+      children:
+        - group_content_actions
+        - group_article_tabs
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: journal-article__tabwrap
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Outer
+      region: content
+    group_content_actions:
+      children:
+        - hwjma_toc_pager
+        - hwjma_focus_view
+      parent_name: group_outer
+      weight: 114
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'journals-step top'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content actions'
+      region: content
+    group_article_tabs:
+      children:
+        - group_article
+        - group_figures_tables
+      parent_name: group_outer
+      weight: 115
+      format_type: highwire_tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+        ajax_markup:
+          ajax_markup_enabled: 1
+          active_tab_ajax_enabled: 0
+      label: 'Article Tabs'
+      region: content
+    group_article:
+      children:
+        - group_abstract
+        - hwmd_long_article_
+      parent_name: group_article_tabs
+      weight: 116
+      format_type: highwire_tab
+      format_settings:
+        id: ''
+        classes: 'tab-content article__tabcontent-body'
+        description: ''
+        active: 1
+        formatter: closed
+      label: Article
+      region: content
+    group_abstract:
+      children:
+        - hwmd_abstract_article_
+      parent_name: group_article
+      weight: 117
+      format_type: html_element
+      format_settings:
+        id: abstract
+        classes: abstract-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: 'class="section-title"'
+        effect: none
+        speed: fast
+      label: Abstract
+      region: content
+    group_figures_tables:
+      children:
+        - hwmd_figures_tables_article_
+      parent_name: group_article_tabs
+      weight: 117
+      format_type: highwire_tab
+      format_settings:
+        id: ''
+        classes: 'tab-content article__tabcontent-body'
+        description: ''
+        active: 1
+        formatter: closed
+      label: 'Figures & Tables'
+      region: content
 id: node.journal_article.full
 targetEntityType: node
 bundle: journal_article
 mode: full
 content:
-  links:
-    weight: 100
+  hwjma_focus_view:
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
+  hwjma_toc_pager:
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  hwmd_abstract_article_:
+    type: hwmarkup_display_formatter
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  hwmd_figures_tables_article_:
+    type: hwmarkup_display_formatter
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  hwmd_long_article_:
+    type: hwmarkup_display_formatter
+    weight: 118
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  addtoany: true
   adjuncts: true
   apath: true
   article_open_access: true
@@ -133,8 +263,10 @@ hidden:
   atom_type: true
   authors_full_name: true
   authors_only_full_name: true
+  ccc_permissions_link: true
   chapter_type: true
   children: true
+  cited_by_block: true
   col_url: true
   contributors: true
   corpus: true
@@ -174,14 +306,12 @@ hidden:
   hw_alerts_sign_up: true
   hw_marker_sign_up: true
   hw_tag_sign_up: true
-  hwmd_abstract_article_: true
   hwmd_abstract_article_toc_: true
   hwmd_abstract_search: true
   hwmd_abstract_search_index_: true
   hwmd_collection_detail: true
+  hwmd_contributors: true
   hwmd_contributors_plain_: true
-  hwmd_figures_tables_article_: true
-  hwmd_long_article_: true
   issue: true
   issue_id: true
   issue_is_open: true
@@ -201,6 +331,7 @@ hidden:
   journal_title: true
   keywords: true
   langcode: true
+  links: true
   lpage: true
   member_network: true
   next_atom: true
@@ -213,6 +344,7 @@ hidden:
   pdf_extract_img: true
   pisa_version: true
   prev_atom: true
+  prev_next_pager: true
   publisher_id: true
   publisher_unique_id: true
   pubmed_id: true
@@ -225,6 +357,7 @@ hidden:
   summary: true
   title_plain: true
   title_short: true
+  usage_stats_table_block: true
   variant_cover_image: true
   variant_cover_pdf: true
   variant_cover_source_image: true

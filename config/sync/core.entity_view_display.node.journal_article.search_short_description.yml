@@ -1,9 +1,9 @@
-uuid: 7b809707-fb1b-490f-99b4-fd99a55859ed
+uuid: 15a68e17-9bbe-4c14-bd73-9e5ce13f38b8
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
+    - core.entity_view_mode.node.search_short_description
     - field.field.node.journal_article.adjuncts
     - field.field.node.journal_article.apath
     - field.field.node.journal_article.article_open_access
@@ -114,17 +114,30 @@ dependencies:
     - field.field.node.journal_article.volume
     - node.type.journal_article
   module:
+    - highwire_markup_display
+    - layout_builder
     - user
-id: node.journal_article.rss
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.journal_article.search_short_description
 targetEntityType: node
 bundle: journal_article
-mode: rss
+mode: search_short_description
 content:
-  links:
-    weight: 100
+  hwmd_abstract_search_index_:
+    type: hwmarkup_display_formatter
+    weight: 1
+    region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
+  links:
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
   adjuncts: true
@@ -179,7 +192,6 @@ hidden:
   hwmd_abstract_article_: true
   hwmd_abstract_article_toc_: true
   hwmd_abstract_search: true
-  hwmd_abstract_search_index_: true
   hwmd_collection_detail: true
   hwmd_contributors: true
   hwmd_contributors_plain_: true
