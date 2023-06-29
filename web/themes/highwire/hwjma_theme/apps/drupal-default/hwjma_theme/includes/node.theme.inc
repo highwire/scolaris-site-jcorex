@@ -61,7 +61,7 @@ function hwjma_preprocess_node__journal_article__content_details(array &$variabl
 /**
  * Implements hook_preprocess_node().
  */
-function hwjma_preprocess_node__journal_article__toc_list(array &$variables) {
+function hwjma_preprocess_node__journal_article__toc_list_(array &$variables) {
   // Default to turning off byline/submitted.
   $variables['display_submitted'] = FALSE;
   $node = $variables['node'];

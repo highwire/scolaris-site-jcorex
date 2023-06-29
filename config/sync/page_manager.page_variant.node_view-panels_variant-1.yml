@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - page_manager.page.node_view
-    - views.view.comments_recent
+    - views.view.content_recent
   module:
     - ctools
     - highwire_display
@@ -69,8 +69,8 @@ variant_settings:
       uuid: 1852e18f-fea2-4304-9dda-f8a7c4f53273
       context_mapping:
         node: node
-    f0f61524-e999-4bda-b43b-fa92ff59aae0:
-      id: 'views_block:comments_recent-block_1'
+    aa849171-bad2-440c-8b0c-6f5f9fe81c37:
+      id: 'views_block:content_recent-block_1'
       label: ''
       provider: views
       label_display: visible
@@ -78,7 +78,7 @@ variant_settings:
       items_per_page: '5'
       region: bottom_right
       weight: 0
-      uuid: f0f61524-e999-4bda-b43b-fa92ff59aae0
+      uuid: aa849171-bad2-440c-8b0c-6f5f9fe81c37
       context_mapping: {  }
   id: panels_variant
   uuid: 913cdc11-eec4-463b-af89-51b8f40e5a98
