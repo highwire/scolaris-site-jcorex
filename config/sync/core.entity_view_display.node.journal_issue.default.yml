@@ -126,6 +126,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   adjuncts: true
   apath: true
   article_open_access: true
@@ -133,6 +134,7 @@ hidden:
   article_type: true
   atom_type: true
   authors_full_name: true
+  ccc_permissions_link: true
   chapter_type: true
   children: true
   col_url: true
@@ -174,6 +176,8 @@ hidden:
   hw_alerts_sign_up: true
   hw_marker_sign_up: true
   hw_tag_sign_up: true
+  hwjma_focus_view: true
+  hwjma_toc_pager: true
   hwmd_table_of_contents_journals_: true
   issue: true
   issue_id: true
@@ -206,6 +210,7 @@ hidden:
   pdf_extract_img: true
   pisa_version: true
   prev_atom: true
+  prev_next_pager: true
   publisher_id: true
   publisher_unique_id: true
   pubmed_id: true
