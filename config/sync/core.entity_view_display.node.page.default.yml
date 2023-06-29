@@ -31,4 +31,8 @@ content:
     weight: 101
     region: content
 hidden:
+  ccc_permissions_link: true
+  hwjma_focus_view: true
+  hwjma_toc_pager: true
   langcode: true
+  prev_next_pager: true
