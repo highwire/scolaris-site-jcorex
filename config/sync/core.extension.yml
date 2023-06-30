@@ -2,6 +2,7 @@ module:
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  adnuntius: 0
   anchor_link: 0
   automated_cron: 0
   block: 0
@@ -83,7 +84,6 @@ module:
   openid_connect: 0
   openid_connect_sams_sigma: 0
   options: 0
-  page_cache: 0
   page_manager: 0
   page_manager_ui: 0
   panels: 0
