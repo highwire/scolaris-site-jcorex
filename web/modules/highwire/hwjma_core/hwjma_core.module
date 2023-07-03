@@ -165,25 +165,25 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
     }
   }
   // Add prev/next pager.
-  if ($display->getComponent('prev_next_pager')) {
-    $plugin_block = $block_manager->createInstance('prev_next_block', ['global_walk' => TRUE]);
-    $plugin_block->setContextValue('node', $entity);
-    $render = $plugin_block->build();
-    if (!empty($render)) {
-      // Add previous & next urls to custom toc pager template.
-      $build['prev_next_pager'] = [
-        '#theme' => 'hwjma_toc_pager',
-        '#previous_url' => Url::fromRoute('<nolink>'),
-        '#next_url' => Url::fromRoute('<nolink>'),
-      ];
-      if (!empty($render['prev_atom']['#url'])) {
-        $build['prev_next_pager']['#previous_url'] = $render['prev_atom']['#url'];
-      }
-      if (!empty($render['next_atom']['#url'])) {
-        $build['prev_next_pager']['#next_url'] = $render['next_atom']['#url'];
-      }
-    }
-  }
+  // if ($display->getComponent('prev_next_pager')) {
+  //   $plugin_block = $block_manager->createInstance('prev_next_block', ['global_walk' => TRUE]);
+  //   $plugin_block->setContextValue('node', $entity);
+  //   $render = $plugin_block->build();
+  //   if (!empty($render)) {
+  //     // Add previous & next urls to custom toc pager template.
+  //     $build['prev_next_pager'] = [
+  //       '#theme' => 'hwjma_toc_pager',
+  //       '#previous_url' => Url::fromRoute('<nolink>'),
+  //       '#next_url' => Url::fromRoute('<nolink>'),
+  //     ];
+  //     if (!empty($render['prev_atom']['#url'])) {
+  //       $build['prev_next_pager']['#previous_url'] = $render['prev_atom']['#url'];
+  //     }
+  //     if (!empty($render['next_atom']['#url'])) {
+  //       $build['prev_next_pager']['#next_url'] = $render['next_atom']['#url'];
+  //     }
+  //   }
+  // }
   // Add permissions link.
   if ($display->getComponent('ccc_permissions_link')) {
     $build['ccc_permissions_link'] = [
