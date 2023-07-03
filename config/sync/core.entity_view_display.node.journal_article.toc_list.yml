@@ -116,7 +116,7 @@ dependencies:
   module:
     - datetime_range
     - field_group
-    - file
+    - highwire_access_control
     - highwire_markup_display
     - text
     - user
@@ -206,12 +206,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   variant_full_text_pdf:
-    type: file_default
+    type: access_aware_file_url_plain
     weight: 8
     region: content
     label: above
     settings:
-      use_description_as_link_text: true
+      access_rules: {  }
+      access_denied_behavior: ''
+      access_denied_html: ''
+      access_link_hide: false
     third_party_settings: {  }
   volume:
     type: text_default
