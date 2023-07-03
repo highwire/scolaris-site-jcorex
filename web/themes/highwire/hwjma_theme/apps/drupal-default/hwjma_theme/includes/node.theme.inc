@@ -202,7 +202,7 @@ function hwjma_preprocess_node__journal__content_details(&$variables) {
   $variables['title'] = $node->get('title')->getString();
   $variables['eissn'] = $node->get('journal_eissn')->getString();
   $variables['pissn'] = $node->get('journal_pissn')->getString();
-  $variables['journal_coverimage'] = '/themes/highwire/bps_theme/dist/app-drupal/assets/images/250X350.png';
+  $variables['journal_coverimage'] = '/themes/highwire/hwjma_theme/dist/app-drupal/assets/images/250X350.png';
   //load data from journal_info node
   if (!empty($info_nodes)) {
     $journal_info = reset($info_nodes);
