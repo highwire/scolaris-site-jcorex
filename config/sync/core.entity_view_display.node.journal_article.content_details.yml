@@ -115,7 +115,7 @@ dependencies:
     - node.type.journal_article
   module:
     - field_group
-    - file
+    - highwire_access_control
     - layout_builder
     - text
     - user
@@ -210,12 +210,15 @@ content:
       link: true
     third_party_settings: {  }
   variant_full_text_pdf:
-    type: file_default
+    type: access_aware_file_url_plain
     weight: 4
     region: content
     label: above
     settings:
-      use_description_as_link_text: true
+      access_rules: {  }
+      access_denied_behavior: ''
+      access_denied_html: ''
+      access_link_hide: false
     third_party_settings: {  }
 hidden:
   adjuncts: true

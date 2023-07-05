@@ -202,7 +202,7 @@ function hwjma_preprocess_node__journal__content_details(&$variables) {
   $variables['title'] = $node->get('title')->getString();
   $variables['eissn'] = $node->get('journal_eissn')->getString();
   $variables['pissn'] = $node->get('journal_pissn')->getString();
-  $variables['journal_coverimage'] = '/themes/highwire/bps_theme/dist/app-drupal/assets/images/250X350.png';
+  $variables['journal_coverimage'] = '/themes/highwire/hwjma_theme/dist/app-drupal/assets/images/250X350.png';
   //load data from journal_info node
   if (!empty($info_nodes)) {
     $journal_info = reset($info_nodes);
@@ -240,4 +240,84 @@ function hwjma_preprocess_node__journal__content_details(&$variables) {
     }
   }
 
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function hwjma_preprocess_node(array &$variables) {
+  // Default to turning off byline/submitted.
+  $variables['display_submitted'] = FALSE;
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    $typeName = $node->bundle();
+
+    //get the current node type
+    $variables['content_type'] =  $typeName;
+
+    //check if the page belongs to content type journal article
+    if ($typeName == 'journal_article') {
+      $nid = $node->id();
+      $options = ['absolute' => TRUE];
+      $url_object = Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
+      $article_url = $url_object->toString();
+      $parent_journal = $node->get('parent_journal')->getValue();
+      $parent_issue = $node->get('parent_issue')->getValue();
+      $parent_issue_nid = $parent_issue[0]['target_id'];
+      $parent_issue_url = null;
+      if (!empty($parent_issue)) {
+        $node = Node::load($parent_issue_nid);
+        $url_object = Url::fromRoute('entity.node.canonical', ['node' => $parent_issue_nid], $options);
+        $parent_issue_url = $url_object->toString();
+      }
+
+      //get parent journal nid
+      $parent_journal_nid = $parent_journal[0]['target_id'];
+      $issue = $node->get('issue')->getValue();
+      $issue = $issue[0]['value'];
+      $volume = !$node->get('volume')->isEmpty() ? $node->get('volume')->getString() : '';
+      //load parent journal
+      if (!empty($parent_journal_nid)) {
+        $node = Node::load($parent_journal_nid);
+        if ($node->hasField('children')) {
+          $children =  !$node->get('children')->isEmpty() ? $node->get('children')->getValue() : '';
+        }
+        // Get the total number of child volume for a Periodical
+        $num_of_children = count($children);
+        $url_object = Url::fromRoute('entity.node.canonical', ['node' => $parent_journal_nid], $options);
+        $nid_journal_info = Drupal::entityQuery('node')->condition('type','journal_info')->condition('field_journal',$parent_journal_nid, '=')->execute();
+        $cover_image = null;
+        foreach ($nid_journal_info as $nid) {
+          $node = Node::load($nid);
+          $parent_journal_img = $node->get('field_journal_cover_image')->getValue();
+          $image_tid = $parent_journal_img[0]['target_id'];
+          if (!empty($image_tid)) {
+            $file = File::load($image_tid);
+            $path = $file->getFileUri();
+            $cover_image = file_create_url($path);
+          } else {
+            $cover_image = '/themes/highwire/hwjma_theme/dist/app-drupal/assets/images/128X128.png';
+          }
+        }
+      }
+      // The Periodical that have only 1 volume should not display the volume numbers
+      if ($num_of_children == 1) {
+        $vol_issue = "Issue ".$issue;
+      } else {
+        $vol_issue = "Vol ".$volume." Issue ".$issue;
+      }
+
+			$periodical_url = $url_object->toString();
+			$title = $node->title->value;
+      $html_entity_decoded_title =  html_entity_decode($title);
+      //set variable
+      $variables['periodical_items'] = [
+        'periodical_url'=> $periodical_url,
+        'cover_img' => $cover_image,
+        'title'=> $html_entity_decoded_title ,
+        'article_url'=> $parent_issue_url,
+        'vol_issue'=> $vol_issue
+      ];
+    }
+  }
 }

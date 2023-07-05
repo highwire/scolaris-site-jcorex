@@ -4,16 +4,10 @@ status: true
 dependencies:
   module:
     - search_api_solr
-    - node
     - search_api
+    - node
   config:
-    - field.storage.node.corpus
-    - field.storage.node.issue
-    - field.storage.node.date_ppub
-    - field.storage.node.version_current
-    - field.storage.node.volume
     - search_api.server.hwjma_solr
-    - core.entity_view_mode.node.full_text_markup
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -40,74 +34,7 @@ id: hwjma
 name: HWJMA
 description: ''
 read_only: false
-field_settings:
-  corpus:
-    label: Corpus
-    datasource_id: 'entity:node'
-    property_path: corpus
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.corpus
-  date_ppub_facet:
-    label: 'Published Date (Facets)'
-    datasource_id: 'entity:node'
-    property_path: date_ppub
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.date_ppub
-  fulltext_search:
-    label: 'Full Text Search'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        administrator: administrator
-      view_mode:
-        'entity:node':
-          journal_article: full_text_markup
-          journal_issue: ''
-  issue:
-    label: issue
-    datasource_id: 'entity:node'
-    property_path: issue
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.issue
-  status:
-    label: Published
-    datasource_id: 'entity:node'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - node
-  type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
-    dependencies:
-      module:
-        - node
-  version_current:
-    label: version-current
-    datasource_id: 'entity:node'
-    property_path: version_current
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.version_current
-  volume:
-    label: volume
-    datasource_id: 'entity:node'
-    property_path: volume
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.volume
+field_settings: {  }
 datasource_settings:
   'entity:node':
     bundles:

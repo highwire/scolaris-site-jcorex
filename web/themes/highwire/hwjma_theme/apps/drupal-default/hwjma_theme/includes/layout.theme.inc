@@ -219,7 +219,7 @@ function hwjma_theme_suggestions_highwire_tabs_alter(array &$suggestions, array 
     // Tabs with a right-hand sidebar.
     case 'group_journal_tabs':
     case 'group_hw_item_tabs':
-      $suggestions[] = 'highwire_tabs__bps_tabs_rhs';
+      $suggestions[] = 'highwire_tabs__hwjma_tabs_rhs';
     break;
   }
 }
@@ -233,7 +233,7 @@ function hwjma_preprocess_hwjma_toc_pager(&$variables) {
       '#type' => 'link',
       '#url' => $variables['previous_url'],
       '#title' => [
-        ['#type' => 'bps_icon', '#icon' => 'arrow-circle-left', '#attributes' => ['class' => ['fa-lg']]],
+        ['#type' => 'hwjma_icon', '#icon' => 'arrow-circle-left', '#attributes' => ['class' => ['fa-lg']]],
         ['#markup' => '<span>Previous</span>'],
       ],
       '#attributes' => ['class' => ['article__previous_link']],
@@ -247,7 +247,7 @@ function hwjma_preprocess_hwjma_toc_pager(&$variables) {
       '#type' => 'link',
       '#url' => $variables['next_url'],
       '#title' => [
-        ['#type' => 'bps_icon', '#icon' => 'arrow-circle-right', '#attributes' => ['class' => ['fa-lg']]],
+        ['#type' => 'hwjma_icon', '#icon' => 'arrow-circle-right', '#attributes' => ['class' => ['fa-lg']]],
         ['#markup' => '<span>Next</span>'],
       ],
       '#attributes' => ['class' => ['article__next_link']],
@@ -256,16 +256,4 @@ function hwjma_preprocess_hwjma_toc_pager(&$variables) {
       $variables['next']['#attributes']['class'][] = 'disabled';
     }
   }
-  dump($variables);
 }
-
-
-
-
-
-
-
-
-
-
-
