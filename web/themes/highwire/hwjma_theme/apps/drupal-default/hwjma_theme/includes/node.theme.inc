@@ -169,6 +169,7 @@ function hwjma_preprocess_node__journal_article__toc_list_(array &$variables) {
   $variables['label'] = html_entity_decode($node->get('title_plain')->getString());
 }
 
+
 /*
 * Implements hook_preprocess_node().
 */
@@ -198,7 +199,7 @@ function hwjma_preprocess_node__journal__content_details(&$variables) {
   $variables['sample_issue_link'] = $sample_issue_link;
    $variables['current_issue_link'] = $current_issue_link;
   //load journal_info  content type
-   $info_nodes = '';//\Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'journal_info', 'field_journal' => $node->id() ]);
+   $info_nodes = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'journal_info', 'field_journal' => $node->id() ]);
   $variables['title'] = $node->get('title')->getString();
   $variables['eissn'] = $node->get('journal_eissn')->getString();
   $variables['pissn'] = $node->get('journal_pissn')->getString();

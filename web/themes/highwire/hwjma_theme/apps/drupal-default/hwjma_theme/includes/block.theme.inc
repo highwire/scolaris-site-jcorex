@@ -315,3 +315,4 @@ function hwjma_preprocess_block__mainpagecontent(&$variables) {
 	$temp_markup = str_replace('No favourites found.', '<p class="item-list__empty">No favourites found.</p>', $temp_markup);
 	$variables['content']['#markup'] = t($temp_markup);
 }
+

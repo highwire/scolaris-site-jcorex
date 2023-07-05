@@ -253,6 +253,7 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
       $journal_info = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'journal_info', 'corpus' => $corpus]);
       $journal_info = array_pop($journal_info);
     }
+    
     if (!empty($journal_info)) {
       // Add cache tag for journal info node.
       $build['#cache']['tags'][] = 'node:' . $journal_info->id();
@@ -262,6 +263,7 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
         'metadata' => ['changed' => time()],
       ];
     }
+    
     if (!empty($journal_info)) {
       $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
       $info_ids = ['about', 'cover_image', 'description', 'submit_article', 'society', 'editors', 'editorial_brd'];
@@ -379,5 +381,6 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
       '#attributes' => ['class' => ['btn', 'btn-secondary']],
     ];
   }
+ // dd($build);
 }
 
