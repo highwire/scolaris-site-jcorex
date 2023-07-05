@@ -154,7 +154,7 @@ third_party_settings:
       children:
         - latest_articles
       parent_name: group_journal_tabs
-      weight: 120
+      weight: 1
       format_type: highwire_tab
       format_settings:
         id: ''
@@ -168,7 +168,7 @@ third_party_settings:
       children:
         - all_issues
       parent_name: group_journal_tabs
-      weight: 121
+      weight: 2
       format_type: highwire_tab
       format_settings:
         id: issues
@@ -182,7 +182,7 @@ third_party_settings:
       children:
         - submit_article
       parent_name: group_journal_tabs
-      weight: 122
+      weight: 3
       format_type: highwire_tab
       format_settings:
         id: submit-an-article
@@ -196,7 +196,7 @@ third_party_settings:
       children:
         - about
       parent_name: group_journal_tabs
-      weight: 123
+      weight: 4
       format_type: highwire_tab
       format_settings:
         id: about
@@ -210,7 +210,7 @@ third_party_settings:
       children:
         - editorial_brd
       parent_name: group_journal_tabs
-      weight: 124
+      weight: 5
       format_type: highwire_tab
       format_settings:
         id: editorial-board
@@ -224,7 +224,7 @@ third_party_settings:
       children:
         - most_read
       parent_name: group_journal_tabs
-      weight: 125
+      weight: 6
       format_type: highwire_tab
       format_settings:
         id: most-read
@@ -250,7 +250,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   editorial_brd:
-    weight: 0
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -260,7 +260,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   most_read:
-    weight: 0
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

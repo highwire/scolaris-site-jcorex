@@ -7,8 +7,10 @@ dependencies:
     - views.view.content_recent
   module:
     - ctools
+    - highwire_display
     - node
     - panels
+    - views
 id: node_view-panels_variant-1
 label: Article
 variant: panels_variant
