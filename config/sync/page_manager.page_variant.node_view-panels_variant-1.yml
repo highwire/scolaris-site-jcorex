@@ -8,6 +8,7 @@ dependencies:
   module:
     - ctools
     - highwire_display
+    - node
     - panels
     - views
 id: node_view-panels_variant-1
@@ -142,6 +143,13 @@ variant_settings:
   builder: standard
 page: node_view
 weight: 0
-selection_criteria: {  }
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      journal_article: journal_article
+    negate: false
+    context_mapping:
+      node: node
 selection_logic: and
 static_context: {  }
