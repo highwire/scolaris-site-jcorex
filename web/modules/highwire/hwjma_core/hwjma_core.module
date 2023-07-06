@@ -351,13 +351,14 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
       $plugin_block->setContextValue('node', $entity);
       $build['most_read'] = $plugin_block->build();
     }
+   // dump($corpus);
     // These views depend on corpus.
     if (!empty($corpus)) {
       // Add each Journal view to the render array.
       $view_ids = ['latest_articles', 'all_issues'];
       $view_args = ['corpus' => $corpus];
       foreach ($view_ids as $id) {
-        if ($display->getComponent($id)) {
+        if ($display->getComponent($id)) {  
           $view = Views::getView($id);
           // Set corpus as contextual filter.
           $view->setArguments($view_args);
@@ -381,6 +382,6 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
       '#attributes' => ['class' => ['btn', 'btn-secondary']],
     ];
   }
- // dd($build);
+  //dd($build);
 }
 

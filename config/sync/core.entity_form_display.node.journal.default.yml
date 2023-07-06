@@ -1,9 +1,8 @@
-uuid: 8d9ac4af-4818-4e09-9317-97d69d8bbd23
+uuid: 1501e11d-df9b-49ee-b6df-2e8feb5f0b55
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
     - field.field.node.journal.adjuncts
     - field.field.node.journal.apath
     - field.field.node.journal.article_open_access
@@ -106,171 +105,71 @@ dependencies:
     - field.field.node.journal.volume
     - node.type.journal
   module:
-    - field_group
-    - layout_builder
-    - user
-third_party_settings:
-  layout_builder:
-    allow_custom: false
-    enabled: false
-  field_group:
-    group_search_within:
-      children: {  }
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: 'toc-head mainpane'
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'search within'
-      region: content
-    group_journal_tabs:
-      children:
-        - group_latest_articles
-        - group_all_issues
-        - group_submit_an_article
-        - group_about_this_periodical
-        - group_editorial_board
-        - group_most_read
-      parent_name: ''
-      weight: 1
-      format_type: highwire_tabs
-      format_settings:
-        id: ''
-        classes: ''
-        direction: vertical
-        ajax_markup:
-          ajax_markup_enabled: 1
-          active_tab_ajax_enabled: 0
-      label: 'Journal tabs'
-      region: content
-    group_latest_articles:
-      children:
-        - latest_articles
-      parent_name: group_journal_tabs
-      weight: 1
-      format_type: highwire_tab
-      format_settings:
-        id: ''
-        classes: mainpanel
-        description: ''
-        active: 1
-        formatter: closed
-      label: 'Latest Articles'
-      region: content
-    group_all_issues:
-      children:
-        - all_issues
-      parent_name: group_journal_tabs
-      weight: 2
-      format_type: highwire_tab
-      format_settings:
-        id: issues
-        classes: mainpanel
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'All issues'
-      region: content
-    group_submit_an_article:
-      children:
-        - submit_article
-      parent_name: group_journal_tabs
-      weight: 3
-      format_type: highwire_tab
-      format_settings:
-        id: submit-an-article
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Submit an article'
-      region: content
-    group_about_this_periodical:
-      children:
-        - about
-      parent_name: group_journal_tabs
-      weight: 4
-      format_type: highwire_tab
-      format_settings:
-        id: about
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'About this periodical'
-      region: content
-    group_editorial_board:
-      children:
-        - editorial_brd
-      parent_name: group_journal_tabs
-      weight: 5
-      format_type: highwire_tab
-      format_settings:
-        id: editorial-board
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Editorial Board'
-      region: content
-    group_most_read:
-      children:
-        - most_read
-      parent_name: group_journal_tabs
-      weight: 6
-      format_type: highwire_tab
-      format_settings:
-        id: most-read
-        classes: mainpanel
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Most Read'
-      region: content
-id: node.journal.full
+    - path
+id: node.journal.default
 targetEntityType: node
 bundle: journal
-mode: full
+mode: default
 content:
-  about:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
-  all_issues:
-    weight: 39
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
-  editorial_brd:
-    weight: 3
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
     region: content
-    settings: {  }
     third_party_settings: {  }
-  latest_articles:
-    weight: 40
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
     region: content
-    settings: {  }
     third_party_settings: {  }
-  most_read:
-    weight: 4
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
     region: content
-    settings: {  }
     third_party_settings: {  }
-  submit_article:
-    weight: 0
+  title:
+    type: string_textfield
+    weight: -5
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden:
-  addtoany: true
   adjuncts: true
   apath: true
   article_open_access: true
@@ -278,14 +177,12 @@ hidden:
   article_type: true
   atom_type: true
   authors_full_name: true
-  ccc_permissions_link: true
   chapter_type: true
   children: true
   col_url: true
   contributors: true
   corpus: true
   cover_date: true
-  cover_image: true
   custom_meta: true
   date_accepted: true
   date_epreprint: true
@@ -317,12 +214,6 @@ hidden:
   has_source: true
   has_tables: true
   has_videos: true
-  highwire_citations_download: true
-  hw_alerts_sign_up: true
-  hw_marker_sign_up: true
-  hw_tag_sign_up: true
-  hwjma_focus_view: true
-  hwjma_toc_pager: true
   hwmd_abstract_search: true
   hwmd_abstract_search_index_: true
   issue: true
@@ -343,8 +234,6 @@ hidden:
   journal_publisher_id: true
   journal_title: true
   keywords: true
-  langcode: true
-  links: true
   lpage: true
   member_network: true
   next_atom: true
@@ -357,7 +246,6 @@ hidden:
   pdf_extract_img: true
   pisa_version: true
   prev_atom: true
-  prev_next_pager: true
   publisher_id: true
   publisher_unique_id: true
   pubmed_id: true

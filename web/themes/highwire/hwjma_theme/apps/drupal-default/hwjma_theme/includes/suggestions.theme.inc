@@ -61,3 +61,14 @@ function hwjma_theme_suggestions_block_alter(array &$suggestions, array $variabl
     }
   }
 }
+
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function hwjma_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+  $element = $variables['element'];
+  $suggestions[] = 'field__' . $element['#view_mode'];
+  $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];
+}
+

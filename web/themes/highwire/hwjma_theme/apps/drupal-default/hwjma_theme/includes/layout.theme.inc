@@ -257,3 +257,30 @@ function hwjma_preprocess_hwjma_toc_pager(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function hwjma_theme_suggestions_views_view_fields_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['view'])) {
+    switch ($variables['view']->id()) {
+      case 'all_issues':
+        $suggestions[] = 'views_view_fields__issue_archive';
+      break;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view_fields__ID().
+ */
+function hwjma_preprocess_views_view_fields__issue_archive(&$variables) {
+  if (!empty($variables['row']->_object)) {
+    $search_api_id = !empty($variables['row']->search_api_id) ? $variables['row']->search_api_id : '';
+    $search_api_id_parts = explode(':', $search_api_id);
+    if ($search_api_id_parts[0] == 'entity') {
+      $entity_type_id = explode('/', $search_api_id_parts[1]);
+      $variables['issue_url'] = Url::fromRoute("entity.$entity_type_id[0].canonical", [$entity_type_id[0] => $entity_type_id[1]])->toString();
+    }
+  }
+}

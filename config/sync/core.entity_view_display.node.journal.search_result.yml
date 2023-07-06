@@ -1,9 +1,9 @@
-uuid: 8d9ac4af-4818-4e09-9317-97d69d8bbd23
+uuid: 8905bdc7-feeb-447c-af42-f0814fc40e3b
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.search_result
     - field.field.node.journal.adjuncts
     - field.field.node.journal.apath
     - field.field.node.journal.article_open_access
@@ -106,172 +106,27 @@ dependencies:
     - field.field.node.journal.volume
     - node.type.journal
   module:
-    - field_group
     - layout_builder
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-  field_group:
-    group_search_within:
-      children: {  }
-      parent_name: ''
-      weight: 0
-      format_type: html_element
-      format_settings:
-        id: ''
-        classes: 'toc-head mainpane'
-        element: div
-        show_label: false
-        label_element: h3
-        attributes: ''
-        effect: none
-        speed: fast
-      label: 'search within'
-      region: content
-    group_journal_tabs:
-      children:
-        - group_latest_articles
-        - group_all_issues
-        - group_submit_an_article
-        - group_about_this_periodical
-        - group_editorial_board
-        - group_most_read
-      parent_name: ''
-      weight: 1
-      format_type: highwire_tabs
-      format_settings:
-        id: ''
-        classes: ''
-        direction: vertical
-        ajax_markup:
-          ajax_markup_enabled: 1
-          active_tab_ajax_enabled: 0
-      label: 'Journal tabs'
-      region: content
-    group_latest_articles:
-      children:
-        - latest_articles
-      parent_name: group_journal_tabs
-      weight: 1
-      format_type: highwire_tab
-      format_settings:
-        id: ''
-        classes: mainpanel
-        description: ''
-        active: 1
-        formatter: closed
-      label: 'Latest Articles'
-      region: content
-    group_all_issues:
-      children:
-        - all_issues
-      parent_name: group_journal_tabs
-      weight: 2
-      format_type: highwire_tab
-      format_settings:
-        id: issues
-        classes: mainpanel
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'All issues'
-      region: content
-    group_submit_an_article:
-      children:
-        - submit_article
-      parent_name: group_journal_tabs
-      weight: 3
-      format_type: highwire_tab
-      format_settings:
-        id: submit-an-article
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Submit an article'
-      region: content
-    group_about_this_periodical:
-      children:
-        - about
-      parent_name: group_journal_tabs
-      weight: 4
-      format_type: highwire_tab
-      format_settings:
-        id: about
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'About this periodical'
-      region: content
-    group_editorial_board:
-      children:
-        - editorial_brd
-      parent_name: group_journal_tabs
-      weight: 5
-      format_type: highwire_tab
-      format_settings:
-        id: editorial-board
-        classes: 'mainpanel book-content'
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Editorial Board'
-      region: content
-    group_most_read:
-      children:
-        - most_read
-      parent_name: group_journal_tabs
-      weight: 6
-      format_type: highwire_tab
-      format_settings:
-        id: most-read
-        classes: mainpanel
-        description: ''
-        active: 0
-        formatter: closed
-      label: 'Most Read'
-      region: content
-id: node.journal.full
+id: node.journal.search_result
 targetEntityType: node
 bundle: journal
-mode: full
+mode: search_result
 content:
-  about:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  all_issues:
-    weight: 39
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  editorial_brd:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  latest_articles:
-    weight: 40
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  most_read:
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  submit_article:
-    weight: 0
+  links:
+    weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  about: true
   addtoany: true
   adjuncts: true
+  all_issues: true
   apath: true
   article_open_access: true
   article_series_title: true
@@ -300,6 +155,7 @@ hidden:
   date_revision: true
   doi: true
   early_release: true
+  editorial_brd: true
   elocation_id: true
   enclosures: true
   extract_policy: true
@@ -344,9 +200,10 @@ hidden:
   journal_title: true
   keywords: true
   langcode: true
-  links: true
+  latest_articles: true
   lpage: true
   member_network: true
+  most_read: true
   next_atom: true
   overline: true
   page_count: true
@@ -365,6 +222,7 @@ hidden:
   secondary: true
   sibling_order: true
   slug: true
+  submit_article: true
   subtitle: true
   subtype: true
   summary: true
