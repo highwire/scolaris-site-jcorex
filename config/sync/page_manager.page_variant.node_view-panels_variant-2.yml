@@ -6,6 +6,7 @@ dependencies:
     - page_manager.page.node_view
   module:
     - ctools
+    - hwjma_search
     - panels
 id: node_view-panels_variant-2
 label: Journal
@@ -34,6 +35,15 @@ variant_settings:
       uuid: 57ddebac-28b4-4a83-b296-4ba88914dfdc
       context_mapping:
         entity: node
+    b88b5f0a-9387-42e2-b95a-5505c1703af8:
+      id: searchBrowse
+      label: 'Search browse block'
+      provider: hwjma_search
+      label_display: '0'
+      region: left
+      weight: -1
+      uuid: b88b5f0a-9387-42e2-b95a-5505c1703af8
+      context_mapping: {  }
   id: panels_variant
   uuid: 9959ed8c-0ea0-4063-8de1-e06f7b1a5780
   label: null

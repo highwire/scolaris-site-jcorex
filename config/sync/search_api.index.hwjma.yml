@@ -6,10 +6,11 @@ dependencies:
     - search_api_solr
     - node
     - search_api
+    - highwire_search
   config:
     - field.storage.node.corpus
-    - field.storage.node.issue
     - field.storage.node.date_ppub
+    - field.storage.node.issue
     - field.storage.node.version_current
     - field.storage.node.volume
     - search_api.server.hwjma_solr
@@ -113,16 +114,46 @@ datasource_settings:
     bundles:
       default: false
       selected:
+        - journal
         - journal_article
+        - journal_fragment
+        - journal_info
         - journal_issue
+        - journal_volume
     languages:
       default: true
       selected: {  }
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  freebird_search_substitute_date:
+    date_ppub_facet:
+      enabled: 1
+      target: journal_article
+      condition: early_release
+      substitute: date_epub_original
+    all_fields: false
+    weights:
+      preprocess_index: -15
+  html_filter:
+    all_fields: false
+    fields:
+      - fulltext_search
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
   rendered_item: {  }
-  solr_date_range: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo
