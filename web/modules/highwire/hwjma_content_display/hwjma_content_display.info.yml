@@ -1,0 +1,8 @@
+name: HWJMA Content Display
+type: module
+description: Front-end customizations for HWJMA content.
+core: 8.x
+package: 'Scolaris  '
+
+libraries:
+  - hwjma_content_display/quickactions

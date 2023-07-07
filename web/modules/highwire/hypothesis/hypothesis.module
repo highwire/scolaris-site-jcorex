@@ -1,0 +1,181 @@
+<?php
+
+use Drupal\Component\Utility\Unicode;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function hypothesis_preprocess_html(&$variables) {
+  $config = \Drupal::config('hypothesis.settings');
+  $route = \Drupal::routeMatch()->getRouteObject();
+  $is_admin = \Drupal::service('router.admin_context')->isAdminRoute($route);
+
+  // If we're on an admin path or the hypothesis visbility settings return false,
+  // do not add hypothesis external library to page.
+  if ($is_admin || !hypothesis_check_visibility()) {
+    return;
+  }
+
+  $default_behaviors = [];
+  $default_behaviors['highlights'] = $config->get('highlights');
+  $default_behaviors['sidebar'] = $config->get('sidebar');
+
+  if (!empty($default_behaviors)) {
+    foreach ($default_behaviors as $key => $default_behavior) {
+      if (empty($default_behavior)) continue;
+      $default_behaviors[$key] = 1;
+    }
+  }
+
+  // Pass configuration to drupalSettings for hypothesisConfig.
+  $variables['#attached']['drupalSettings']['hypothesis']['defaults'] = $default_behaviors;
+
+  // If default client setting override is not set, load the defaults.
+  $default_override = $config->get('override');
+  if (empty($default_override)) {
+    $variables['#attached']['library'][] = 'hypothesis/hypothesis.defaults';
+  }
+
+  // Add module's main library, which includes external Hypothesis core JS,
+  // and the module's CSS.
+  $variables['#attached']['library'][] = 'hypothesis/hypothesis';
+
+  // Add class to page wrapper.
+  $variables['attributes']['class'][] = 'hypothesis';
+}
+
+/**
+ * Helper function for getting hypothesis visibility config.
+ */
+function hypothesis_check_visibility() {
+  // Set display to false by default.
+  $display_hypothesis = FALSE;
+
+  $config = \Drupal::config('hypothesis.settings');
+  $user = \Drupal::currentUser();
+  $user_roles = $user->getRoles();
+
+  foreach ($user_roles as $user_role) {
+    $assigned_user_roles[$user_role] = $user_role;
+  }
+
+  // If there are no roles associated, hypothesis is displayed for every role.
+  // If none of the user's roles matches the hypothesis role settings, it wont show.
+  $config_user_roles = $config->get('user_roles');
+  $config_roles = $config_user_roles['roles'];
+  $filter_roles = [];
+  if (!empty($config_roles)) {
+    $filter_roles = array_filter($config_roles);
+  }
+
+  // User role should override page and node type match,
+  // return false immediately if user role does not match.
+  if (is_array($config_roles) && !empty($filter_roles) && !array_intersect($config_roles, array_keys($assigned_user_roles))) {
+    // No match.
+    return FALSE;
+  }
+  else {
+    // Yes match.
+    $display_hypothesis = TRUE;
+  }
+
+  // Check which pages hypothesis should display on.
+  $config_path = $config->get('path');
+  $visibility = $config_path['hypothesis_visibility'];
+  $pages = $config_path['hypothesis_pages'];
+
+  // Match path if necessary.
+  if ($pages) {
+    // Convert path to lowercase. This allows comparison of the same path
+    // with different case. Ex: /Page, /page, /PAGE.
+    $pages = Unicode::strtolower($pages);
+
+    // Convert the Drupal path to lowercase
+    $current_path = \Drupal::service('path.current')->getPath();
+    $path = Unicode::strtolower($current_path);
+
+    // Compare the lowercase internal and lowercase path alias (if any).
+    $page_match = \Drupal::service('path.matcher')->matchPath($path, $pages);
+
+    // We know if the current path matches any pages defined in config.
+    // Now check if we should or shouldn't display on said page match
+    // via the $visibility setting.
+    // 1 for only matched pages. 0 for all except matched.
+
+    // Visibility is set to display on matched pages.
+    if (!empty($visibility)) {
+      // Check if the page matches or not.
+      if (!empty($page_match)) {
+        // Page matches, return true immediately since node type
+        // is irrelevant at this point.
+        $display_hypothesis = TRUE;
+        return TRUE;
+      }
+      else {
+        // Page does not match, but node type config may override this.
+        $display_hypothesis = FALSE;
+      }
+    }
+    else {
+      // Visibility is set to display on all pages except matched pages.
+      // Check if the page matches or not.
+      if (!empty($page_match)) {
+        // Page matches, return FALSE immeditaly since we are specifically
+        // saying don't display on this page, regardless of node type config.
+        $display_hypothesis = FALSE;
+        return FALSE;
+      }
+      else {
+        // Page does not match, we should display hypothesis.
+        // but node type config may override this, so don't return TRUE
+        // quite yet...
+        $display_hypothesis = TRUE;
+      }
+    }
+  }
+  elseif (empty($visibility)) {
+    // Visibility is set to exclude defined pages and no pages are defined.
+    $display_hypothesis = TRUE;
+  }
+  else {
+    // Visibility is set to include defined pages and no pages are defined.
+    $display_hypothesis = FALSE;
+  }
+
+  // If we're not on a node page, then the node check is irrelevant.
+  // Return $display_hypothesis.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (empty($node)) {
+    return $display_hypothesis;
+  }
+
+  //Check which content types hypothesis should display on.
+  $config_content_types = $config->get('content_types');
+  $config_types = $config_content_types['types'];
+
+  $filter_types = [];
+  if (!empty($config_types)) {
+    $filter_types = array_filter($config_types);
+  }
+
+  if (empty($filter_types)) {
+    // No node types are defined, node check is irrelevant.
+    // Return $display_hypothesis.
+    return $display_hypothesis;
+  }
+
+  if (is_array($config_types) && !empty($filter_types)) {
+    // Check if the node type is set.
+    if (empty($config_types[$node->getType()])) {
+      // Hypothesis should not be displayed for this node type.
+      $display_hypothesis = FALSE;
+    }
+    else {
+      // Hypothesis should be displayed for this node type.
+      $display_hypothesis = TRUE;
+    }
+  }
+
+  return $display_hypothesis;
+
+}

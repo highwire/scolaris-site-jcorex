@@ -1,0 +1,5 @@
+name: HWJMA Core
+description: Core functionality for the Scolaris HWJMA site
+package: 'Scolaris HWJMA'
+type: module
+core: 8.x
